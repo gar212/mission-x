@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 100vw;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  width: 90vw;
+  margin: 0 5vw;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  height: 50px;
+  margin: 5px 0;
+}
+
+.language {
+  margin-top: 5px;
+}
+
+.language img {
+  height: 10px;
+}
+
+.language img:first-child {
+  margin: 0 5px;
+}
+
+/* End of Navbar */
+
+/* Main Body */
+
+.mainContainer {
+  display: flex;
+  height: 820px;
+  width: 100vw; /* Revisit resizing of this container. Probably is a better way */
+  max-width: 1560px;
+  margin: 0 auto;
+  background-color: #b2e4fa;
+}
+
+.sideMenu {
+  background-color: #43c0f6;
+  min-width: 200px;
+  height: 100%;
+  color: #707070;
+}
+
+.sideMenu ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.sideMenu li {
+  font-size: 0.75rem;
+
+  background-color: #b2e4fa;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sideMenu .teacherProfile {
+  border-radius: 50%;
+  height: 70px;
+  margin: 25px 0 15px;
+}
+
+.bodyContain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: initial;
+  background-color: #b2e4fa;
+  width: 100%;
+  margin: 0 25px;
+  align-content: flex-start;
+}
+
+.bodyTopButton {
+  display: flex;
+  width: 100%;
+  margin: 5px 30px 5px 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bodyTopButton button {
+  font-family: "Nunito", "Open Sans", sans-serif;
+  border: none;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 5px 11px 0px rgb(0 0 0 / 12%);
+  border-radius: 5px;
+  padding: 6px 0;
+  width: 180px;
+  margin: 0 10px;
+}
+
+.bodyTopButton button:nth-child(1) {
+  background-color: #e5ab2c;
+}
+
+.bodyTopButton button:nth-child(2) {
+  background-color: #f91c85;
+}
+
+.bodyTopButton button:nth-child(3) {
+  background-color: #43c0f6;
+}
+
+.bodyMain {
+  background-color: #d9f2fd;
+  border-radius: 30px;
+  width: 100%;
+  height: calc(100% - 80px); /* Remove 80px due to bodyTopButton */
+}
