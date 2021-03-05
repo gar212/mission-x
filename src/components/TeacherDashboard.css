@@ -7,16 +7,17 @@
   width: 100vw;
 }
 
-/* Navbar */
+/* Header */
 
-.navbar {
+.header {
   display: flex;
   width: 90vw;
-  margin: 0 5vw;
+  margin: 0 auto;
+  max-width: 1500px;
   justify-content: space-between;
 }
 
-.navbar .logo {
+.header .logo {
   height: 50px;
   margin: 5px 0;
 }
@@ -33,7 +34,7 @@
   margin: 0 5px;
 }
 
-/* End of Navbar */
+/* End of Header */
 
 /* Main Body */
 
@@ -46,11 +47,13 @@
   background-color: #b2e4fa;
 }
 
+/* Side Menu */
+
 .sideMenu {
   background-color: #43c0f6;
   min-width: 200px;
   height: 100%;
-  color: #707070;
+  color: white;
 }
 
 .sideMenu ul {
@@ -62,18 +65,27 @@
 
 .sideMenu li {
   font-size: 0.75rem;
-
-  background-color: #b2e4fa;
-  padding: 15px 20px;
+  display: flex;
+  background-color: #43c0f6;
+  padding: 14px 0 14px 15px;
   text-transform: uppercase;
   font-weight: bold;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+
+.sideMenu li img {
+  height: 20px;
+  margin-right: 10px;
 }
 
 .sideMenu .teacherProfile {
   border-radius: 50%;
   height: 70px;
-  margin: 25px 0 15px;
+  margin: 25px 0 10px;
 }
+
+/* End of Side Menu */
 
 .bodyContain {
   display: flex;
