@@ -1,0 +1,48 @@
+.sideNav {
+  background-color: #43c0f6;
+  min-width: 200px;
+  height: 100%;
+  color: white;
+}
+
+.sideNav ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.sideNav li {
+  font-size: 0.75rem;
+  display: flex;
+  background-color: #43c0f6;
+  padding: 14px 0 14px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+
+.sideNav li img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.sideNav .profileImage {
+  border-radius: 50%;
+  height: 70px;
+  margin: 25px 0 10px;
+}
+
+.sideNavLower {
+  display: flex;
+  font-size: 0.5rem;
+  justify-content: space-evenly;
+}
+
+.sideNavLower li {
+  font-size: 0.5rem;
+  font-weight: normal;
+  padding: 0;
+  text-transform: capitalize;
+}
