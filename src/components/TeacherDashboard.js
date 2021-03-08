@@ -4,33 +4,26 @@ import './TeacherDashboard.css';
 import LogoBlue from '../img/LogoBlue.jpg';
 import MaoriFlag from '../img/MaoriFlag.jpg';
 import NZFlag from '../img/NZFlag.jpg';
-import TeacherProfile from '../img/teacherProfile.jpg';
 
-function TeacherDashboard() {
+import SideNav from './SideNav';
+
+// const images1 = require.context('../img', true, /\.(png|jpe?g|svg)$/);
+
+const TeacherDashboard = (props) => {
     return (
         <div className="container">
-            {/* // Navbar */}
-            <div className="navbar">
+            {/* // Header */}
+            <div className="header">
                 <img className="logo" src={LogoBlue} alt="Level Up Works Logo"/>
                 <div className="language">
                     <img src={NZFlag} alt="NZ Flag"/>
                     <img src={MaoriFlag} alt="Maori Flag"/>
                 </div>
             </div>
-            {/* End of Navbar */}
+            {/* End of Header */}
             {/* Main Body*/}
             <div className="mainContainer">
-                <div className="sideMenu">
-                    <img className="teacherProfile" src={TeacherProfile} alt="Teacher Profile"/>
-                    <ul>
-                        <li>Progress Tracker</li>
-                        <li>Student Profiles</li>
-                        <li>Help Requests</li>
-                        <li>Project Submissions</li>
-                        <li>Project Library</li>
-                    </ul>
-                </div>
-                
+                <SideNav />       
                 <div className="bodyContain">
                     <div className="bodyTopButton">
                         <button>Take Screenshot</button>
@@ -38,13 +31,12 @@ function TeacherDashboard() {
                         <button>More Projects</button>
                     </div>
                     <div className="bodyMain">
-                
+                    {/* Place Teacher Components here */}
+
                     </div>
                 </div>
             </div>
-
-
-
+            {/* End of Main Body */}
 
             <footer>
                 <p>© Levelup Works 2020</p>

@@ -3,20 +3,26 @@
   font-family: "Open Sans", sans-serif;
 }
 
+button:focus {
+  /* Remove button outline onclick. I understand does reduces page accessibility */
+  outline: none;
+}
+
 .container {
   width: 100vw;
 }
 
-/* Navbar */
+/* Header */
 
-.navbar {
+.header {
   display: flex;
   width: 90vw;
-  margin: 0 5vw;
+  margin: 0 auto;
+  max-width: 1500px;
   justify-content: space-between;
 }
 
-.navbar .logo {
+.header .logo {
   height: 50px;
   margin: 5px 0;
 }
@@ -33,7 +39,7 @@
   margin: 0 5px;
 }
 
-/* End of Navbar */
+/* End of Header */
 
 /* Main Body */
 
@@ -46,34 +52,7 @@
   background-color: #b2e4fa;
 }
 
-.sideMenu {
-  background-color: #43c0f6;
-  min-width: 200px;
-  height: 100%;
-  color: #707070;
-}
-
-.sideMenu ul {
-  list-style: none;
-  text-align: left;
-  padding: 0;
-  margin: 0;
-}
-
-.sideMenu li {
-  font-size: 0.75rem;
-
-  background-color: #b2e4fa;
-  padding: 15px 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.sideMenu .teacherProfile {
-  border-radius: 50%;
-  height: 70px;
-  margin: 25px 0 15px;
-}
+/* End of Side Menu */
 
 .bodyContain {
   display: flex;
