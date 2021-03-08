@@ -31,7 +31,7 @@ const TeacherDashboard = (props) => {
                         <button>More Projects</button>
                     </div>
                     <div className="bodyMain">
-                
+                    {/* Place Teacher Components here */}
 
                     </div>
                 </div>
