@@ -1,0 +1,23 @@
+.PSHeader, .PSText {
+    text-align: left;
+}
+
+/*PS = Projects Sidebar */
+.PSHeader {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.PSText {
+    font-size: 14px;
+}
+/*Need to add bullet points to this */
+
+.Underline {
+    margin: -12px 0px 0px 0.5px;
+}
+/*Underline size is a bit awkward so this has the -12px is a guess */
+
+.WhiteSpace {
+    margin: 0px 0px 50px 0px;
+}

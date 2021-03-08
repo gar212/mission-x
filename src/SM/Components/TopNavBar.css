@@ -1,0 +1,32 @@
+.TopNavBar{
+    background-color: red;
+    display: flex;
+    height: 64px;
+    width: 1920px;
+    margin: 0px;
+}   
+
+.HomeLink, .ProjectsLink, .TeachersLink{
+    color: white;
+    margin-top: 32px;
+}
+
+.ProjectsLink {
+    margin-left: 99px; 
+    margin-right: 97px;
+}
+
+.TeachersLink {
+    margin-right: 316px;
+}
+
+p {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+.StarLogo {
+    margin-left: 255px;
+    margin-right: 373px;
+    
+}
