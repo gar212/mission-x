@@ -1,34 +1,41 @@
+.TopNavBar {
+    display: inline;
+
+}
+
+.Body {
+    background-color: pink;
+    display: flex;
+}
+
 .ProjectsHeading, .ProjectsHeadSubtext {
     text-align: left;
 }
 
 
 .ProjectsHeading{
-    margin: 88px 1157px 15px 544px;
+    margin: 88px 1157px 15px 0px;
     font-size: 42px;
 /* Will need to add fonts and bold */
 }
 
 .ProjectsHeadSubtext {
-    margin: 0px 274px 57px 547px;
+    margin: 0px 274px 57px 0px;
     font-size: 20px;
 /* Might need to change botton px based on how the sidebar and body material fits  */ 
 }
 
-.Body {
-  display: flex;  
+.Row1{
+    margin-top: 38.5px;
 }
 
-.BIABar {
-    margin-left: 300px;
-    {/*Temporary Code for testing*/}
-    
-}
+.Row1, .Row2, .Row3, .Row4, .Row5 {
+    height: 250px;
+    background-color: rgb(126, 126, 196);
+    margin-bottom: 59px;
+    display: block;
+} 
 
-.ProjectsSidebar{
-    width: 173px;
-    height: 100%; 
-    margin-left: 255px;
-    margin-left: 116px; 
+h1 {
+    margin: 0px 0px 0px 0px;
 }
-/*width calc 255 + 1492 = 1747 - 1920 = 173*/ 
