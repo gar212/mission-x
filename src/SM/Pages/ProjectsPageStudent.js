@@ -7,22 +7,41 @@ import BIABar from "../Components/BIABar.js";
 
 function ProjectsPageStudent() {
   return (
-    <div>
-      <div>
+    <div className = "Layout">
+      <div className = "TopNavBar">
         <TopNavBar />
       </div>
-      <div>
-        <ProjectsHeading />
-        <ProjectsHeadSubtext />
-      </div>
       <div className = "Body">
-          <div className = "ProjectsSidebar">
-            <ProjectsSidebar />
+        <div className = "PorjectsSideSize">
+          <ProjectsSidebar />
+        </div>
+        <div>
+          <ProjectsHeading />
+          <ProjectsHeadSubtext />
+          <BIABar/>
+          {/*BIA - Beginner, Intermediate, Advanced */}
+          <div id = "Rows">
+            <div className = "Row1">
+              <h1>Row1</h1>
+            </div>
+            <div className = "Row2">
+              <h1>Row2</h1>
+            </div>
+            <div className = "Row3">
+              <h1>Row3</h1>
+            </div>
+            <div className = "Row4">
+             <h1>Row4</h1>
+            </div>
+            <div className = "Row5">
+              <h1>Row5</h1>
+            </div>
           </div>
-          <div className = "BIABar"> {/*Move this above the side bar inline with ProjectsHeading/Subtext */}
-            <BIABar/>
-          </div>
-      </div>
+        </div>
+        
+      </div>   
+      
+
     </div>
     
   );
