@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
 }
 
 button:focus {
@@ -10,6 +9,7 @@ button:focus {
 
 .container {
   width: 100vw;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Header */
