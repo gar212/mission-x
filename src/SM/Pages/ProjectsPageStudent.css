@@ -1,3 +1,7 @@
+.Layout {
+  position: relative;
+}
+
 .TopNavBar {
   display: inline;
 }
@@ -31,4 +35,17 @@
 
 h1 {
   margin: 0px 0px 0px 0px;
+}
+
+.BackToTop {
+  position: absolute;
+  top: 2325px;
+  left: 1499px;
+  /*Top Calculation changed from adobe XD measurement to make it look closer to design. Value given by XD is 2412px */
+}
+
+.Footer {
+  position: absolute;
+  top: 2538px;
+  width: 100%;
 }
