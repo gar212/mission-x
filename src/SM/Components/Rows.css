@@ -1,15 +1,48 @@
-.Row1{
-    margin-top: 38.5px;
-    display: flex;
+/*TO FIX
+~ PROJECT 5 SPACING BETWEEN THE BEAR AND THE MONKEY HEADING & SUBHEADING TEXT NEEDS TO BE FIXED / ANOTHER CLASS CREATED
+- COLLUM SPACING BETWEEN C2 & C3 IS OFF.
+*/
 
+.RowHeading,
+.RowSubHeading {
+  margin-left: 3.5px;
+  /*Compensate the -7px from C1 (Collum 1) */
+  /*
+  FIX THIS DOES OFFSET ALL THE OTHER COLLUMS
+  */
 }
 
-.P1 {
-    margin: 0px 92px 16px -7px;
+.RowHeading {
+  font-family: "Nunito";
+  font-size: 30px;
+  font-weight: 900;
+  color: #707070;
+  margin-bottom: 13px;
+  line-height: 80%;
 }
 
-.P2 {
-    margin: 0px 92px 16px 0px;
+.RowSubHeading {
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #767676;
 }
 
+.Row {
+  margin-top: 38.5px;
+  display: flex;
+  text-align: center;
+}
 
+.C1 {
+  margin: 0px 78px 16px -7px;
+  /*
+  NOTE - RIGHT MARGIN MIGHT NEED TO BE ADJUSTED FURTHER TO 71PX.
+  ~ 92px - (2 * 7px) = 78 - This is due to the 7px space between the end of the project photo and the end of the photo.
+  ~ The -7px left margin is to compensate with the white space after the project photos 
+  */
+}
+
+.C2 {
+  margin: 0px 78px 16px 0px;
+  width: 314px;
+}

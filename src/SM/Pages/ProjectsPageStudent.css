@@ -1,32 +1,34 @@
 .TopNavBar {
-    display: inline;
-
+  display: inline;
 }
 
 .Body {
-    background-color: pink;
-    display: flex;
+  display: flex;
 }
 
-.ProjectsHeading, .ProjectsHeadSubtext {
-    text-align: left;
-}
-
-
-.ProjectsHeading{
-    margin: 88px 1157px 15px 0px;
-    font-size: 42px;
-/* Will need to add fonts and bold */
+.ProjectsHeading {
+  margin: 88px 1157px 15px 0px;
+  font-size: 42px;
+  font-family: "Nunito";
+  font-weight: 900;
+  color: #6c6c6c;
+  /* Looks like it isn't bold enough? 
+    - Missing a boarder?
+    - Shadow also?
+*/
 }
 
 .ProjectsHeadSubtext {
-    margin: 0px 274px 57px 0px;
-    font-size: 20px;
-/* Might need to change botton px based on how the sidebar and body material fits  */ 
+  margin: 0px 274px 57px 0px;
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: #767676;
+  /* 
+    - Missing a boarder?
+    - Shadow also?
+*/
 }
 
 h1 {
-    margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
-
-

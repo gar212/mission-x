@@ -1,57 +1,61 @@
 /*BIA - Beginner, Intermediate, Advanced */
 .BIABar {
-    text-align: left;
-    display: flex;
-    height: 21px;
+  text-align: left;
+  display: flex;
+  height: 21px;
 }
 
-.BeginnerText, .BeginnerBackground, .IntermediateText, .MenuSeperator, .AdvancedText {
-    z-index: 2;
+.BeginnerText,
+.BeginnerBackground,
+.IntermediateText,
+.MenuSeperator,
+.AdvancedText {
+  z-index: 2;
 }
 
 .Button {
-    position: absolute;
-    z-index: 1;
-    margin-left: 10px;
-
+  position: absolute;
+  z-index: 1;
+  margin-left: 10px;
 }
 
 .BeginnerBackground {
-    height: 22px;
-    margin-top: 0.75px;
-    
+  height: 22px;
+  margin-top: 0.75px;
 }
 
 .BeginnerText {
-    position: absolute;
-    margin: 1.3px 0px 0px 14px;
-    /*XD Pixel position was off so I have adjusted accordingly*/
-    
+  position: absolute;
+  margin: 1.3px 0px 0px 14px;
+  /*XD Pixel position was off so I have adjusted accordingly*/
 }
 
 .IntermediateText {
-    margin: 0.8px 0px 0px 15.0px;
-    /*XD Pixel position was off so I have adjusted accordingly*/
+  margin: 0.8px 0px 0px 15px;
+  /*XD Pixel position was off so I have adjusted accordingly*/
 }
 
 .MenuSeperator {
-    margin: 1.5px 23px 0px 15.0px;
-    height: 20px;
-    /*XD Pixel position was off so I have adjusted accordingly*/
+  margin: 1.5px 23px 0px 15px;
+  height: 20px;
+  /*XD Pixel position was off so I have adjusted accordingly*/
 }
 
 .AdvancedText {
-    height: 20px;
-    margin-top: 1px;
-    /*XD Pixel position was off so I have adjusted accordingly*/
+  height: 20px;
+  margin-top: 1px;
+  /*XD Pixel position was off so I have adjusted accordingly*/
 }
 /* className = "BeginnerBackground" */
 
 .ShowText {
-    margin-left: 556px;
+  margin-left: 556px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #767676;
 }
 
-.SegmentedControl{
-    height: 37.25px;
-    margin-left: 21px;
+.SegmentedControl {
+  height: 37.25px;
+  margin-left: 21px;
 }
