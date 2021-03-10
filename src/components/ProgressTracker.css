@@ -23,8 +23,18 @@ h2 {
 }
 
 .infoName {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.infoAmount {
+  font-weight: bold;
+}
+
+.infoAmount span {
+  font-weight: normal;
 }
 
 .progressHeader {
@@ -49,7 +59,8 @@ h2 {
 }
 
 .circleProgress {
-  display: grid;
+  display: flex;
+  justify-content: center;
   align-items: center;
   border: 1px solid grey;
   border-radius: 50%;

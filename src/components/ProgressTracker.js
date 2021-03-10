@@ -3,7 +3,7 @@ import './ProgressTracker.css';
 
 function ProgressTracker() {
     return (
-        
+
         <div className='progressContainer'>
             <div className="progressHeader">
                 <h1>Beginner Course</h1>
@@ -12,7 +12,7 @@ function ProgressTracker() {
             <div className="progressItem">
                 <div className="info">
                     <p className="infoName">Aiden Andrews</p>
-                    <p>4/15 <span>Projects Completed</span></p>
+                    <p className="infoAmount">4/15 <span>Projects Completed</span></p>
                 </div>
                 <div className="circleContainer">
                     {/* Remove once forEach is implemented. Right now used as placeholder */}
