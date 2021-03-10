@@ -25,17 +25,8 @@
 /* Might need to change botton px based on how the sidebar and body material fits  */ 
 }
 
-.Row1{
-    margin-top: 38.5px;
-}
-
-.Row1, .Row2, .Row3, .Row4, .Row5 {
-    height: 250px;
-    background-color: rgb(126, 126, 196);
-    margin-bottom: 59px;
-    display: block;
-} 
-
 h1 {
     margin: 0px 0px 0px 0px;
 }
+
+

@@ -8,6 +8,9 @@
 .HomeLink, .ProjectsLink, .TeachersLink{
     color: white;
     margin-top: 32px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .ProjectsLink {

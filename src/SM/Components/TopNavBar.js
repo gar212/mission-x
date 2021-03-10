@@ -9,13 +9,13 @@ function TopNavBar() {
         <img src = {StarLogo} alt = "Star Logo"/>
     </div>
     <div className = "HomeLink">
-        <p>Home</p>
+        <p>HOME</p>
     </div>
     <div className = "ProjectsLink">
-        <p>Projects</p>
+        <p>PROJECTS</p>
     </div>
     <div className = "TeachersLink">
-        <p>Teachers</p>
+        <p>TEACHERS</p>
     </div>
   </div>
   );

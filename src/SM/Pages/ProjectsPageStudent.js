@@ -3,6 +3,7 @@ import "./ProjectsPageStudent.css";
 import TopNavBar from "../Components/TopNavBar.js";
 import ProjectsSidebar from "../Components/SideBar.js";
 import BIABar from "../Components/BIABar.js";
+import Rows from "../Components/Rows.js"
 
 
 function ProjectsPageStudent() {
@@ -20,23 +21,7 @@ function ProjectsPageStudent() {
           <ProjectsHeadSubtext />
           <BIABar/>
           {/*BIA - Beginner, Intermediate, Advanced */}
-          <div id = "Rows">
-            <div className = "Row1">
-              <h1>Row1</h1>
-            </div>
-            <div className = "Row2">
-              <h1>Row2</h1>
-            </div>
-            <div className = "Row3">
-              <h1>Row3</h1>
-            </div>
-            <div className = "Row4">
-             <h1>Row4</h1>
-            </div>
-            <div className = "Row5">
-              <h1>Row5</h1>
-            </div>
-          </div>
+          <Rows />
         </div>
         
       </div>   
