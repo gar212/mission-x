@@ -1,14 +1,70 @@
+.progressContainer {
+  color: #6c6c6c;
+}
+
+h1,
 h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
+  margin: 0;
+
+  font-weight: 800;
+  font-family: "Nunito", "Open Sans", sans-serif;
 }
 
 .progressContainer {
-    background-color: white;
-    width: 100%;
+  margin: 0 5%;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 25%;
+  padding: 30px 0;
+}
+
+.infoName {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.infoAmount {
+  font-weight: bold;
+}
+
+.infoAmount span {
+  font-weight: normal;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 55px 0;
+}
+
+.progressItem {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.circleContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .circleProgress {
-    border: 1px solid grey;
-    border-radius: 50%;
-    box-shadow: 0 3px 10px #adadad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px #b8b8b8;
+  width: 35px;
+  height: 35px;
 }
