@@ -1,0 +1,17 @@
+.circleContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circleProgress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px #b8b8b8;
+  width: 33px;
+  height: 33px;
+}

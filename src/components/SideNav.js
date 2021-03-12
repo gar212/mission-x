@@ -21,11 +21,19 @@ function SideNav(props) {
         setSideNavOpened(!sideNavOpened)
     };
 
+        const teacherNav = [
+        { navName: "Progress Tracker", image: {Sidebar1} },
+        { navName: "Student Profiles", image: {Sidebar2} },
+        { navName: "Help Requests",image: {Sidebar3} },
+        { navName: "Project Submissions",image: {Sidebar4} },
+        { navName: "Project Library", image: {Sidebar5} }
+    ]
+
     return (
         <div className="sideNav" style={slideSideNav()}>
             <img className="profileImage" src={TeacherProfile} alt="Teacher Profile" />
             <ul className="sideNavUpper">
-                <li><img src={Sidebar1} alt="Progress Tracker Icon" />{sideNavOpened ? 'Progress Tracker' : ''}</li>
+                <li><img src={Sidebar1} alt="Progress Tracker Icon" />{sideNavOpened ? teacherNav[0].navName : ''}</li>
                 <li><img src={Sidebar2} alt="Student Profiles Icon" />{sideNavOpened ? 'Student Profiles' : ''}</li>
                 <li><img src={Sidebar3} alt="Help Request Icon" />{sideNavOpened ? 'Help Requests' : ''}</li>
                 <li><img src={Sidebar4} alt="Project Submission Icon" />{sideNavOpened ? 'Project Submissions' : ''}</li>
@@ -33,9 +41,9 @@ function SideNav(props) {
             </ul>
             <button className="toggleNav" onClick={() => { slideButtonClicked() }}><i className="fa fa-caret-left"></i></button>
             <ul className="sideNavLower">
-                <li><a href="/"><i className="fa fa-user-circle" /><label>Profile</label></a></li>
-                <li><a href="/"><i className="fa fa-cog" /><label>Settings</label></a></li>
-                <li><a href="/"><i className="fa fa-sign-out" /><label>Log out</label></a></li>
+                <li><a href="/"><i className="fa fa-user-circle" /><label>{sideNavOpened ? 'Profile' : ''}</label></a></li>
+                <li><a href="/"><i className="fa fa-cog" /><label>{sideNavOpened ? 'Settings' : ''}</label></a></li>
+                <li><a href="/"><i className="fa fa-sign-out" /><label>{sideNavOpened ? 'Log out' : ''}</label></a></li>
             </ul>
         </div>
     )

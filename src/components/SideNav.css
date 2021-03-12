@@ -38,9 +38,10 @@ button {
 }
 
 .sideNav .profileImage {
+  display: flex;
   border-radius: 50%;
   height: 70px;
-  margin: 25px 0 10px;
+  margin: 25px auto 10px;
 }
 
 .sideNavLower {
@@ -49,7 +50,7 @@ button {
   font-size: 0.5rem;
   justify-content: center;
   position: relative; /* Change this in future. Should use flex positioning instead of relative positioning */
-  top: 41%; /* Change this in future. Should use flex positioning instead of relative positioning */
+  top: 43%; /* Change this in future. Should use flex positioning instead of relative positioning */
 }
 
 .sideNavLower li {
@@ -59,6 +60,7 @@ button {
   padding: 0 4px;
   text-transform: capitalize;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .sideNavLower i {

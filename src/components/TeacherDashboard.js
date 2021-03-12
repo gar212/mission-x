@@ -32,8 +32,11 @@ const TeacherDashboard = (props) => {
                         <button>More Projects</button>
                     </div>
                     <div className="bodyMain">
-                        {/* Place Teacher Components here */}
-                        <ProgressTracker />
+                        <div className="bodyWrapper">
+                            {/* Place Teacher Components here */}
+                            <ProgressTracker />
+                        </div>
+
                     </div>
                 </div>
             </div>
