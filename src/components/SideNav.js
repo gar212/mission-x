@@ -26,7 +26,7 @@ function SideNav(props) {
     }
 
     const flipToggleNav = () => {
-        return sideNavOpened ? {} : { float: "left", transform: "rotate(180deg)", marginTop: "19%", position: "absolute" }
+        return sideNavOpened ? {} : { float: "left", transform: "rotate(180deg)", marginTop: "250px", position: "absolute" }
     }
 
     // Toggle state of sideNavOpened
@@ -38,20 +38,20 @@ function SideNav(props) {
     const teacherNav = [
         { navName: "Progress Tracker", image: SidebarT1 },
         { navName: "Student Profiles", image: SidebarT2 },
-        { navName: "Help Requests",image: SidebarT3 },
-        { navName: "Project Submissions",image: SidebarT4 },
+        { navName: "Help Requests", image: SidebarT3 },
+        { navName: "Project Submissions", image: SidebarT4 },
         { navName: "Project Library", image: SidebarT5 }
     ]
 
     let sideNavCurrent = [];
 
     // Loop through SideNav Arrays to populate SideNav bar
-    for (let i=0; i < teacherNav.length; i++ ){
-        sideNavCurrent.push(<SideNavItems 
-            name = {teacherNav[i].navName} 
-            image = {teacherNav[i].image }
-            sideNavState = {sideNavOpened}
-            key = {i} />)
+    for (let i = 0; i < teacherNav.length; i++) {
+        sideNavCurrent.push(<SideNavItems
+            name={teacherNav[i].navName}
+            image={teacherNav[i].image}
+            sideNavState={sideNavOpened}
+            key={i} />)
     };
 
     return (

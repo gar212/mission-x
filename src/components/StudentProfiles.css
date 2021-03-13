@@ -1,0 +1,17 @@
+.studentProfileContainer {
+    display: grid;
+}
+
+.studentProfileItem {
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.studentProfileItem img {
+    border-radius: 50%;
+}
+
+.studentProfileItem p {
+    text-transform: uppercase;
+}

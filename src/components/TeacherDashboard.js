@@ -3,6 +3,7 @@ import React from 'react';
 import './TeacherDashboard.css';
 import SideNav from './SideNav';
 import ProgressTracker from './ProgressTracker';
+import StudentProfiles from './StudentProfiles';
 import LogoBlue from '../img/LogoBlue.jpg';
 import MaoriFlag from '../img/MaoriFlag.jpg';
 import NZFlag from '../img/NZFlag.jpg';
@@ -34,7 +35,8 @@ const TeacherDashboard = (props) => {
                     <div className="bodyMain">
                         <div className="bodyWrapper">
                             {/* Place Teacher Components here */}
-                            <ProgressTracker />
+                            {/* <ProgressTracker /> */}
+                            <StudentProfiles />
                         </div>
 
                     </div>
