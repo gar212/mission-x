@@ -57,7 +57,8 @@ button {
   display: flex;
   font-size: 0.5rem;
   font-weight: normal;
-  padding: 0 4px;
+  /* padding: 0 4px; */
+  padding: 0 4px 3px;
   text-transform: capitalize;
   flex-wrap: wrap;
   text-align: center;
