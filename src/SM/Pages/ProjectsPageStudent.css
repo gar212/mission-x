@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.TopNavBar {
-  display: inline;
-}
-
 .Body {
   display: flex;
 }
