@@ -23,7 +23,7 @@ button:focus {
   display: flex;
   width: 90vw;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1660px;
   justify-content: space-between;
 }
 
@@ -107,7 +107,7 @@ button:focus {
   border-radius: 30px;
   width: 100%;
   height: calc(100% - 80px); /* Remove 80px due to bodyTopButton */
-  padding: 50px 80px 0 80px;
+  padding: 50px 40px 0 50px;
 }
 
 .bodyWrapper {
