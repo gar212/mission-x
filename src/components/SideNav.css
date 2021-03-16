@@ -85,3 +85,30 @@ button {
   float: right;
   margin-top: 10%;
 }
+
+.active {
+  background-color: #d9f2fd;
+  color: white;
+}
+
+/* Styles for when sideNav is closed */
+
+.sideNavClosed {
+  width: 110px!important;
+}
+
+.toggleNavClosed {
+  float: "left";
+  transform: rotate(180deg);
+  margin-top: 250px;
+  position: absolute ;
+}
+
+.sideNavLowerClosed {
+  top: 40%;
+  flex-direction: column;
+}
+
+.sideNavLowerNavCenter{
+  justify-content: "center";
+}
