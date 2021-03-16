@@ -12,27 +12,8 @@ function SideNav(props) {
     // State for SideNav slide in/out function
     const [sideNavOpened, setSideNavOpened] = useState(true);
 
-    // Apply style based on state of sideNavOpened
-    const slideSideNav = () => {
-        return sideNavOpened ? {} : { width: "110px" }
-    };
-
-    const pushLowerNavUp = () => {
-        return sideNavOpened ? {} : { top: "40%", flexDirection: "column" }
-    };
-
-    const centerLowerNav = () => {
-        return sideNavOpened ? {} : { justifyContent: "center" }
-    }
-
-    const flipToggleNav = () => {
-        return sideNavOpened ? {} : { float: "left", transform: "rotate(180deg)", marginTop: "250px", position: "absolute" }
-    }
-
     // Toggle state of sideNavOpened
-    const slideButtonClicked = () => {
-        setSideNavOpened(!sideNavOpened)
-    };
+    const slideButtonClicked = () => setSideNavOpened(!sideNavOpened);
 
     // Teacher Navigation Array
     const teacherNav = [
@@ -55,16 +36,20 @@ function SideNav(props) {
     };
 
     return (
-        <div className="sideNav" style={slideSideNav()}>
+        <div className={sideNavOpened ? "sideNav": `sideNav sideNavClosed`}>
             <img className="profileImage" src={TeacherProfile} alt="Teacher Profile" />
             <ul className="sideNavUpper">
                 {sideNavCurrent}
             </ul>
-            <button className="toggleNav" style={flipToggleNav()} onClick={() => { slideButtonClicked() }}><i className="fa fa-caret-left"></i></button>
-            <ul className="sideNavLower" style={pushLowerNavUp()}>
-                <li style={centerLowerNav()}><a href="/"><i className="fa fa-user-circle" /><label>{sideNavOpened ? 'Profile' : ''}</label></a></li>
-                <li style={centerLowerNav()}><a href="/"><i className="fa fa-cog" /><label>{sideNavOpened ? 'Settings' : ''}</label></a></li>
-                <li style={centerLowerNav()}><a href="/"><i className="fa fa-sign-out" /><label>{sideNavOpened ? 'Log out' : ''}</label></a></li>
+            <button 
+                className={sideNavOpened ? "toggleNav": `toggleNav toggleNavClosed`} 
+                onClick= {slideButtonClicked}>
+                <i className="fa fa-caret-left"></i>
+            </button>
+            <ul className={sideNavOpened ? "sideNavLower": `sideNavLower sideNavLowerClosed`}>
+                <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-user-circle" /><label>{sideNavOpened ? 'Profile' : ''}</label></a></li>
+                <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-cog" /><label>{sideNavOpened ? 'Settings' : ''}</label></a></li>
+                <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-sign-out" /><label>{sideNavOpened ? 'Log out' : ''}</label></a></li>
             </ul>
         </div>
     )
