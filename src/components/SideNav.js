@@ -13,9 +13,7 @@ function SideNav(props) {
     const [sideNavOpened, setSideNavOpened] = useState(true);
 
     // Toggle state of sideNavOpened
-    const slideButtonClicked = () => {
-        setSideNavOpened(!sideNavOpened)
-    };
+    const slideButtonClicked = () => setSideNavOpened(!sideNavOpened);
 
     // Teacher Navigation Array
     const teacherNav = [
@@ -45,8 +43,8 @@ function SideNav(props) {
             </ul>
             <button 
                 className={sideNavOpened ? "toggleNav": `toggleNav toggleNavClosed`} 
-                onClick={() => { slideButtonClicked() }}>
-                    <i className="fa fa-caret-left"></i>
+                onClick= {slideButtonClicked}>
+                <i className="fa fa-caret-left"></i>
             </button>
             <ul className={sideNavOpened ? "sideNavLower": `sideNavLower sideNavLowerClosed`}>
                 <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-user-circle" /><label>{sideNavOpened ? 'Profile' : ''}</label></a></li>
