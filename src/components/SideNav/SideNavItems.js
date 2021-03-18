@@ -11,7 +11,13 @@ const SideNavItems = (props) => {
 
     return (
         <div>
-            <li style={centerSideNavIcons()}><img style={enlargeSideNavIcons()} src={props.image} alt={props.name + " Icons"}/>{props.sideNavState ? props.name : ''}</li>
+            <li style={centerSideNavIcons()}>
+                <img style={enlargeSideNavIcons()} 
+                src={props.image} 
+                alt={props.name + " Icons"}
+                />
+                {props.sideNavState ? props.name : ''}
+            </li>
         </div>
     )
 }

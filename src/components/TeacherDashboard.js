@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import './TeacherDashboard.css';
 import SideNav from './SideNav';
 import ProgressTracker from './ProgressTracker';
@@ -35,10 +35,10 @@ const TeacherDashboard = (props) => {
                     <div className="bodyMain">
                         <div className="bodyWrapper">
                             {/* Place Teacher Components here */}
-                            {/* <ProgressTracker /> */}
+                            <ProgressTracker />
                             <StudentProfiles />
+                            
                         </div>
-
                     </div>
                 </div>
             </div>

@@ -11,6 +11,7 @@ import SideNavItems from './SideNav/SideNavItems';
 function SideNav(props) {
     // State for SideNav slide in/out function
     const [sideNavOpened, setSideNavOpened] = useState(true);
+    const [navOptionState, setnavOptionState] = useState(1);
 
     // Toggle state of sideNavOpened
     const slideButtonClicked = () => setSideNavOpened(!sideNavOpened);
@@ -24,9 +25,8 @@ function SideNav(props) {
         { navName: "Project Library", image: SidebarT5 }
     ]
 
-    let sideNavCurrent = [];
-
     // Loop through SideNav Arrays to populate SideNav bar
+    let sideNavCurrent = [];
     for (let i = 0; i < teacherNav.length; i++) {
         sideNavCurrent.push(<SideNavItems
             name={teacherNav[i].navName}

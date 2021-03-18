@@ -30,6 +30,7 @@ button {
   font-weight: bold;
   align-items: center;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .sideNav li img {
@@ -87,8 +88,12 @@ button {
 }
 
 .active {
-  background-color: #d9f2fd;
-  color: white;
+  background-color: #d9f2fd!important;
+  color: #707070;
+}
+
+.active img {
+  
 }
 
 /* Styles for when sideNav is closed */

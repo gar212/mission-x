@@ -23,7 +23,7 @@ button:focus {
   display: flex;
   width: 90vw;
   margin: 0 auto;
-  max-width: 1660px;
+  max-width: 1500px;
   justify-content: space-between;
 }
 
