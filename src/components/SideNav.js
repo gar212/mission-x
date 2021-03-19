@@ -11,12 +11,11 @@ import SideNavItems from './SideNav/SideNavItems';
 function SideNav(props) {
     // State for SideNav slide in/out function
     const [sideNavOpened, setSideNavOpened] = useState(true);
-    const [navOptionState, setnavOptionState] = useState(1);
 
     // Toggle state of sideNavOpened
     const slideButtonClicked = () => setSideNavOpened(!sideNavOpened);
 
-    // Teacher Navigation Array
+    // Teacher Side Navigation Array
     const teacherNav = [
         { navName: "Progress Tracker", image: SidebarT1 },
         { navName: "Student Profiles", image: SidebarT2 },
@@ -25,13 +24,15 @@ function SideNav(props) {
         { navName: "Project Library", image: SidebarT5 }
     ]
 
-    // Loop through SideNav Arrays to populate SideNav bar
+    // Loop through SideNav Arrays to populate SideNav bar with props
     let sideNavCurrent = [];
     for (let i = 0; i < teacherNav.length; i++) {
         sideNavCurrent.push(<SideNavItems
             name={teacherNav[i].navName}
             image={teacherNav[i].image}
             sideNavState={sideNavOpened}
+            clickHandler={() => props.onChange(i)}
+            styleHandler={props.optionStateNav === i ? "active": ""}
             key={i} />)
     };
 
@@ -45,6 +46,7 @@ function SideNav(props) {
                 className={sideNavOpened ? "toggleNav": `toggleNav toggleNavClosed`} 
                 onClick= {slideButtonClicked}>
                 <i className="fa fa-caret-left"></i>
+                
             </button>
             <ul className={sideNavOpened ? "sideNavLower": `sideNavLower sideNavLowerClosed`}>
                 <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-user-circle" /><label>{sideNavOpened ? 'Profile' : ''}</label></a></li>

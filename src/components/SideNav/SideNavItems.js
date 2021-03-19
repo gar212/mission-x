@@ -1,6 +1,7 @@
 import React from 'react'
 
 const SideNavItems = (props) => {
+    
     const centerSideNavIcons = () => {
         return props.sideNavState ? {} : { justifyContent: "center" } 
     }
@@ -11,10 +12,14 @@ const SideNavItems = (props) => {
 
     return (
         <div>
-            <li style={centerSideNavIcons()}>
-                <img style={enlargeSideNavIcons()} 
-                src={props.image} 
-                alt={props.name + " Icons"}
+            <li className={props.styleHandler}
+                style={centerSideNavIcons()} 
+                onClick={() => props.clickHandler()}
+                >
+                <img 
+                 style={enlargeSideNavIcons()} 
+                 src={props.image} 
+                 alt={props.name + " Icons"} 
                 />
                 {props.sideNavState ? props.name : ''}
             </li>

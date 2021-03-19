@@ -88,25 +88,25 @@ button {
 }
 
 .active {
-  background-color: #d9f2fd!important;
+  background-color: #d9f2fd !important;
   color: #707070;
 }
 
 .active img {
-  
+  filter: brightness(0.4);
 }
 
 /* Styles for when sideNav is closed */
 
 .sideNavClosed {
-  width: 110px!important;
+  width: 110px !important;
 }
 
 .toggleNavClosed {
   float: "left";
   transform: rotate(180deg);
   margin-top: 250px;
-  position: absolute ;
+  position: absolute;
 }
 
 .sideNavLowerClosed {
@@ -114,6 +114,6 @@ button {
   flex-direction: column;
 }
 
-.sideNavLowerNavCenter{
+.sideNavLowerNavCenter {
   justify-content: "center";
 }

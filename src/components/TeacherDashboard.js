@@ -1,5 +1,5 @@
-import React from 'react';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import React, { useState } from 'react'
+// import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import './TeacherDashboard.css';
 import SideNav from './SideNav';
 import ProgressTracker from './ProgressTracker';
@@ -8,10 +8,11 @@ import LogoBlue from '../img/LogoBlue.jpg';
 import MaoriFlag from '../img/MaoriFlag.jpg';
 import NZFlag from '../img/NZFlag.jpg';
 
-
-// const images1 = require.context('../img', true, /\.(png|jpe?g|svg)$/);
-
 const TeacherDashboard = (props) => {
+    // Changes components displayed in the body based on state. Clicking on SideNav
+    // changes the state
+    const [OptionState, setOptionState] = useState(0);
+
     return (
         <div className="container">
             {/* // Header */}
@@ -25,7 +26,7 @@ const TeacherDashboard = (props) => {
             {/* End of Header */}
             {/* Main Body*/}
             <div className="mainContainer">
-                <SideNav />
+                <SideNav optionStateNav={OptionState} onChange={setOptionState} />
                 <div className="bodyContain">
                     <div className="bodyTopButton">
                         <button>Take Screenshot</button>
@@ -35,9 +36,11 @@ const TeacherDashboard = (props) => {
                     <div className="bodyMain">
                         <div className="bodyWrapper">
                             {/* Place Teacher Components here */}
-                            <ProgressTracker />
-                            <StudentProfiles />
-                            
+
+                            {OptionState === 0 && <ProgressTracker /> }
+                            {OptionState === 1 && <StudentProfiles /> }
+
+                            {/* End of Teacher Components */}
                         </div>
                     </div>
                 </div>
