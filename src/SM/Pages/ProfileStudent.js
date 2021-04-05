@@ -4,10 +4,7 @@ import TopNavBar from "../Components/TopNavBar.js";
 import Footer from "../Components/Footer.js";
 import RectangleFrame from "../Components/Images/RectangleFrame.png";
 import StudentPic from "../Components/Images/StudentPic.png";
-import EditProfileButton from "../Components/Images/EditProfileButton.png";
-import ChangePhotoButton from "../Components/Images/ChangePhotoButton.png";
 import RectangleFrameLarge from "../Components/Images/Rectangle 271.png";
-import BackToProjects from "../Components/Images/BackToProjects.png";
 
 function ProfileStudent() {
   return (
@@ -23,16 +20,16 @@ function ProfileStudent() {
             />
 
             <img src={StudentPic} alt="Student" className="StudentPic" />
-            <img
-              src={EditProfileButton}
-              alt="Edit Profile Button"
-              className="EditProfileButton"
-            />
-            <img
-              src={ChangePhotoButton}
-              alt="Change img Button"
-              className="ChangePhotoButton"
-            />
+
+            <div>
+              <p className="EditProfileButtonText ProfileButton">
+                EDIT PROFILE
+              </p>
+            </div>
+
+            <div>
+              <p className="ChangePhotoButton ProfileButton">CHANGE PHOTO</p>
+            </div>
           </div>
         </div>
         <div className="StudentInformation">
@@ -63,11 +60,9 @@ function ProfileStudent() {
             </div>
           </div>
         </div>
-        <img
-          src={BackToProjects}
-          alt="Back to Projects"
-          className="BackToProjects"
-        />
+        <div className="BackToProjects">
+          <p>BACK TO PROJECTS</p>
+        </div>
       </div>
       <Footer />
     </div>

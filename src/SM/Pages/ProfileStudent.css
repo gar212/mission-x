@@ -24,8 +24,8 @@
 }
 
 .StudentPic,
-.ChangePhotoButton,
-.EditProfileButton {
+.EditProfileButtonText,
+.ChangePhotoButton {
   z-index: 2;
   position: absolute;
 }
@@ -36,20 +36,28 @@
   margin: 82px 93px 69px 93px;
 }
 
-.EditProfileButton,
-.ChangePhotoButton {
-  height: 35px;
-  width: 175px;
-  margin-left: 93px;
-  margin-right: 93px;
+.ProfileButton {
+  border: 3px solid #43c0f6;
+  border-radius: 8px;
 }
 
-.EditProfileButton {
-  margin-top: 326px;
+.EditProfileButtonText,
+.ChangePhotoButton {
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Nunito";
+  color: #43c0f6;
+  /*FONT not Thicc enough */
+}
+
+.EditProfileButtonText {
+  margin: 326px 93px 0 93px;
+  padding: 7px 31.5px 6px 31.5px;
 }
 
 .ChangePhotoButton {
-  margin-top: 395px;
+  margin: 395px 93px 0 93px;
+  padding: 7px 20.5px 6px 20.5px;
 }
 
 .StudentInformation {
@@ -114,4 +122,12 @@
 .BackToProjects {
   margin-left: 1394px;
   margin-top: 924px;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Nunito";
+  padding: 7px 19px 6px 19px;
+  background-color: #f91c85;
+  color: #ffffff;
+  border-radius: 7px;
 }
+/* NOT THICC ENOUGH */
