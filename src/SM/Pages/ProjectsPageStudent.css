@@ -35,8 +35,16 @@ h1 {
 
 .BackToTop {
   position: absolute;
-  top: 2325px;
+  top: 2348px;
   left: 1499px;
+  padding: 8px 31.15px 5px 31.5px;
+  background-color: #e5ab2c;
+  color: #ffffff;
+  border-radius: 7px;
+  font-size: 16px;
+  font-family: Nunito;
+  font-weight: 900;
+
   /*Top Calculation changed from adobe XD measurement to make it look closer to design. Value given by XD is 2412px */
 }
 

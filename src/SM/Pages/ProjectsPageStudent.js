@@ -5,7 +5,6 @@ import ProjectsSidebar from "../Components/SideBar.js";
 import BIABar from "../Components/BIABar.js";
 import Rows from "../Components/Rows.js";
 import Footer from "../Components/Footer.js";
-import BackToTop from "../Components/Images/CTA Button.png";
 
 function ProjectsPageStudent() {
   return (
@@ -23,7 +22,9 @@ function ProjectsPageStudent() {
           <BIABar />
           {/*BIA - Beginner, Intermediate, Advanced */}
           <Rows />
-          <img src={BackToTop} alt="Back To Top" className="BackToTop" />
+          <div className="BackToTop">
+            <p>BACK TO TOP</p>
+          </div>
         </div>
         <div className="Footer">
           <Footer />
