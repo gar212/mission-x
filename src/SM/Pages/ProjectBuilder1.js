@@ -1,5 +1,16 @@
 import React from "react";
 import "./ProjectBuilder1.css";
+import StudentPic from "../Components/Images/StudentPic.png";
+import Objectives from "../Components/Images/objectives-8.png";
+import Steps from "../Components/Images/steps-9.png";
+import Video from "../Components/Images/video-9.png";
+import NewProj from "../Components/Images/new proj-10.png";
+import SubmitProj from "../Components/Images/submit proj-13.png";
+import BonusChal from "../Components/Images/prize copy-11.png";
+import TakeQuiz from "../Components/Images/list copy-11.png";
+import Icon from "../Components/Images/Icon awesome-user-circle.png";
+import Settings from "../Components/Images/Icon material-settings.png";
+import Log from "../Components/Images/Icon awesome-sign-out-alt.png";
 
 function ProjectBuilder1() {
   return (
@@ -8,29 +19,59 @@ function ProjectBuilder1() {
       <div className="Body">
         <div className="SideBar">
           <div className="user">
-            <p>PHOTO - Child</p>
+            <img
+              src={StudentPic}
+              alt="Student"
+              className="StudentPhotoProjectBuilder"
+            />
           </div>
 
           <div className="SideBarOption">
-            <p>LEARNING OBJECTIVES</p>
+            <img src={Objectives} alt="Objectives" className="SidebarImg" />
+            <p className="SidebarText">LEARNING OBJECTIVES</p>
           </div>
           <div className="SideBarOption">
-            <p>INSTRUCTIONS</p>
+            <img src={Steps} alt="Steps" className="SidebarImg" />
+            <p className="SidebarText">INSTRUCTIONS</p>
           </div>
           <div className="SideBarOption">
-            <p>VIDEO TUTORIAL</p>
+            <img src={Video} alt="Video" className="SidebarImg" />
+            <p className="SidebarText">VIDEO TUTORIAL</p>
           </div>
           <div className="SideBarOption">
-            <p>MAKE PROJECT</p>
+            <img src={NewProj} alt="Objectives" className="SidebarImg" />
+            <p className="SidebarText">MAKE PROJECT</p>
           </div>
           <div className="SideBarOption">
-            <p>SUBMIT PROJECT</p>
+            <img src={SubmitProj} alt="Submit Project" className="SidebarImg" />
+            <p className="SidebarText">SUBMIT PROJECT</p>
           </div>
           <div className="SideBarOption">
-            <p>BONUS CHALLENGE</p>
+            <img src={BonusChal} alt="Bonus Challenge" className="SidebarImg" />
+            <p className="SidebarText">BONUS CHALLENGE</p>
           </div>
           <div className="SideBarOption">
-            <p>TAKE THE QUIZ</p>
+            <img src={TakeQuiz} alt="Take The Quiz" className="SidebarImg" />
+            <p className="SidebarText">TAKE THE QUIZ</p>
+          </div>
+          <div className="SidebarCollapse">
+            <div className="ArrowBackground">
+              <div className="Triangle"></div>
+            </div>
+          </div>
+          <div className="SidebarFoot">
+            <div className="SideProfile ProfileMargin">
+              <img src={Icon} alt="Icon" className="SideFootImg" />
+              <p className="FooterText ">Profile</p>
+            </div>
+            <div className="SideSettings SettingsMargin">
+              <img src={Settings} alt="Settings" className="SideFootImg" />
+              <p className="FooterText ">Settings</p>
+            </div>
+            <div className="SideLog LogMargin">
+              <img src={Log} alt="Log Out" className="SideFootImg" />
+              <p className="FooterText ">Log Out</p>
+            </div>
           </div>
         </div>
         <div className="Content"></div>
