@@ -1,0 +1,35 @@
+.TopNav {
+  background-color: pink;
+  height: 62px;
+}
+/*Side Bar - default*/
+.SideBar {
+  width: 236px;
+  height: 957px;
+  background-color: #43c0f6;
+  display: inline;
+}
+
+.user {
+  height: 129px;
+}
+
+.SideBarOption {
+  height: 53px;
+  font-family: "Open Sans";
+  font-weight: 900;
+  color: white;
+}
+
+/*Content */
+.Content {
+  background-color: #b2e4fa;
+  width: 1684px;
+  height: 957px;
+  display: inline;
+}
+
+.footer {
+  height: 61px;
+  background-color: coral;
+}
