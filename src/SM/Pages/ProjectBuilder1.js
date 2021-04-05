@@ -2,6 +2,7 @@ import React from "react";
 import "./ProjectBuilder1.css";
 import ProjectBuilderSidebar from "../Components/ProjectBuilderSidebar.js";
 import TopNavProjectBuilder from "../Components/TopNavProjectBuilder.js";
+import ProjectBuilderFooter from "../Components/ProjectBuilderFooter.js";
 
 function ProjectBuilder1() {
   return (
@@ -11,7 +12,7 @@ function ProjectBuilder1() {
         <ProjectBuilderSidebar />
         <div className="Content"></div>
       </div>
-      <div className="footer"></div>
+      <ProjectBuilderFooter />
     </div>
   );
 }
