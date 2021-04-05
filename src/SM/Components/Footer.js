@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import LevelUpWorks from "../Components/Images/LevelUpWorks.png";
 
 function Footer() {
   return (
@@ -49,7 +48,20 @@ function Footer() {
         </div>
       </div>
       <div className="LevelUpWorks">
-        <img src={LevelUpWorks} alt="Level Up Works" />
+        <div className="FooterHeading">
+          <div>LevelUpWorks</div>
+          <div className="FooterText LevelUpMargin">
+            <p>
+              LevelUp Works is an Auckland-based <br />
+              enterprise dedicated to developing game- <br />
+              based learning software to help teachers in <br />
+              response to the New Zealand Digital <br />
+              Technologies & Hangarau Matihiko. <br />
+              alan@levelupworks.com <br />
+              (021) 668 185
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
