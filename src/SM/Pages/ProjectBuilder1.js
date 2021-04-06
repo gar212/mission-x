@@ -3,6 +3,7 @@ import "./ProjectBuilder1.css";
 import ProjectBuilderSidebar from "../Components/ProjectBuilderSidebar.js";
 import TopNavProjectBuilder from "../Components/TopNavProjectBuilder.js";
 import ProjectBuilderFooter from "../Components/ProjectBuilderFooter.js";
+import ProjectBuilderContent from "../Components/ProjectBuilderContent.js";
 
 function ProjectBuilder1() {
   return (
@@ -10,7 +11,7 @@ function ProjectBuilder1() {
       <TopNavProjectBuilder />
       <div className="Body">
         <ProjectBuilderSidebar />
-        <div className="Content"></div>
+        <ProjectBuilderContent />
       </div>
       <ProjectBuilderFooter />
     </div>

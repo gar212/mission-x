@@ -1,0 +1,102 @@
+/*Content */
+.Content {
+  background-color: #b2e4fa;
+  width: 100%;
+  height: 957px;
+}
+
+.Buttons {
+  display: flex;
+}
+
+.ScreenShot,
+.TeacherHelp,
+.Projects {
+  width: 200px;
+  height: 35px;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+  padding-top: 8px;
+  border-radius: 7px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.ScreenShot {
+  background-color: #e5ab2c;
+  margin-left: 901px;
+}
+
+.TeacherHelp {
+  background-color: #f91c85;
+  margin-left: 27px;
+}
+
+.Projects {
+  background-color: #43c0f6;
+  margin-left: 27px;
+  margin-right: 129px;
+}
+
+.scratchBackground {
+  width: 1571px;
+  height: 860px;
+  border-radius: 30px;
+  background-color: #d8f1fc;
+  margin-left: 46px;
+}
+
+.scratchHeading {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Nunito;
+  color: #707070;
+  padding: 39px 743px 30px 561px;
+}
+
+.scratchSubheading {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Open Sans";
+  color: #707070;
+  padding: 0 460px 1px 319px;
+}
+
+.Blocks {
+  display: flex;
+  margin-top: 4px;
+}
+
+.BlockHeading {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Nunito;
+  color: #707070;
+  margin-bottom: 19px;
+}
+
+.BlockContainer {
+  display: flex;
+}
+
+.LookBlocks {
+  margin-left: 88px;
+}
+
+.ControlBlocks {
+  margin-left: 73px;
+}
+
+.MotionBlocks {
+  margin-left: 101px;
+}
+
+.LookRight,
+.ControlRight,
+.MotionRight {
+  margin-top: 14px;
+  margin-left: 29px;
+}
