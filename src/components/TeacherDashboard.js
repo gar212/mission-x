@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
-import SideNav from './SideNav';
+import SideNav from './SideNav/SideNav';
 import ProgressTracker from './ProgressTracker/ProgressTracker';
 import StudentProfiles from './StudentProfiles/StudentProfiles';
 

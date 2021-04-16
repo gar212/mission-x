@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import './SideNav.css';
-import SidebarT1 from '../img/Sidebar1.png';
-import SidebarT2 from '../img/Sidebar2.png';
-import SidebarT3 from '../img/Sidebar3.png';
-import SidebarT4 from '../img/Sidebar4.png';
-import SidebarT5 from '../img/Sidebar5.png';
-import TeacherProfile from '../img/teacherProfile.jpg';
-import SideNavItems from './SideNav/SideNavItems';
+import SidebarT1 from '../../img/Sidebar1.png';
+import SidebarT3 from '../../img/Sidebar3.png';
+import SidebarT2 from '../../img/Sidebar2.png';
+import SidebarT4 from '../../img/Sidebar4.png';
+import SidebarT5 from '../../img/Sidebar5.png';
+import TeacherProfile from '../../img/teacherProfile.jpg';
+import SideNavItems from './SideNavItems';
 
 function SideNav(props) {
     // State for SideNav slide in/out function
