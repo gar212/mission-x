@@ -1,13 +1,14 @@
 import React from 'react';
-import ProgressStudent from './ProgressTracker/ProgressStudent';
+import ProgressStudent from './ProgressStudent';
 import './ProgressTracker.css';
+import FileExport from '../../img/FileExport.png';
 
 function ProgressTracker() {
     return (
         <div className='progressContainer'>
             <div className="progressHeader">
                 <h1>Beginner Course</h1>
-                <h2><i className="fa fa-file-export"></i>Export as Spreadsheet</h2>
+                <h2><img className="fileExport" src={FileExport} alt="Export File"/>Export as Spreadsheet</h2>
             </div>
             {/* Make properties dynamic once back-end is implemented */}
             <div className="progressStudentContainer">

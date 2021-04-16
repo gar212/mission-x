@@ -26,14 +26,19 @@ function SideNav(props) {
 
     // Loop through SideNav Arrays to populate SideNav bar with props
     let sideNavCurrent = [];
+
+    // Use Map. Returns a value and returns array - ForEach does not have a return a new value
     for (let i = 0; i < teacherNav.length; i++) {
-        sideNavCurrent.push(<SideNavItems
+        sideNavCurrent.push(
+        <SideNavItems
             name={teacherNav[i].navName}
             image={teacherNav[i].image}
             sideNavState={sideNavOpened}
             clickHandler={() => props.onChange(i)}
             styleHandler={props.optionStateNav === i ? "active": ""}
-            key={i} />)
+            key={i} 
+        />
+            )
     };
 
     return (
@@ -42,12 +47,13 @@ function SideNav(props) {
             <ul className="sideNavUpper">
                 {sideNavCurrent}
             </ul>
-            <button 
-                className={sideNavOpened ? "toggleNav": `toggleNav toggleNavClosed`} 
-                onClick= {slideButtonClicked}>
-                <i className="fa fa-caret-left"></i>
-                
-            </button>
+            <div className="sideNavToggleContainer">
+                <button 
+                    className={sideNavOpened ? "toggleNav": `toggleNav toggleNavClosed`} 
+                    onClick= {slideButtonClicked}>
+                    <i className="fa fa-caret-left"></i>
+                </button>
+            </div>
             <ul className={sideNavOpened ? "sideNavLower": `sideNavLower sideNavLowerClosed`}>
                 <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-user-circle" /><label>{sideNavOpened ? 'Profile' : ''}</label></a></li>
                 <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-cog" /><label>{sideNavOpened ? 'Settings' : ''}</label></a></li>

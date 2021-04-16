@@ -13,6 +13,9 @@ button {
   width: 100%;
   height: 100%;
   color: white;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .sideNav ul {
@@ -42,7 +45,7 @@ button {
   display: flex;
   border-radius: 50%;
   height: 70px;
-  margin: 25px auto 10px;
+  margin: 25px auto;
 }
 
 .sideNavLower {
@@ -50,8 +53,8 @@ button {
   display: flex;
   font-size: 0.5rem;
   justify-content: center;
-  position: relative; /* Change this in future. Should use flex positioning instead of relative positioning */
-  top: 43%; /* Change this in future. Should use flex positioning instead of relative positioning */
+  /* position: relative; Change this in future. Should use flex positioning instead of relative positioning
+  top: 43%; Change this in future. Should use flex positioning instead of relative positioning */
 }
 
 .sideNavLower li {
@@ -82,9 +85,17 @@ button {
   border: none;
   background-color: #b2e4fa;
   color: #f91c84;
-  padding: 0px 16px;
-  float: right;
-  margin-top: 10%;
+  padding: 5px 16px;
+  width: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sideNavToggleContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .active {

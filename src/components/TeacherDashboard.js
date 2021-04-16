@@ -1,17 +1,28 @@
 import React, { useState } from 'react'
 // import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import './TeacherDashboard.css';
+
 import SideNav from './SideNav';
-import ProgressTracker from './ProgressTracker';
-import StudentProfiles from './StudentProfiles';
+import ProgressTracker from './ProgressTracker/ProgressTracker';
+import StudentProfiles from './StudentProfiles/StudentProfiles';
+
 import LogoBlue from '../img/LogoBlue.jpg';
 import MaoriFlag from '../img/MaoriFlag.jpg';
 import NZFlag from '../img/NZFlag.jpg';
+import './TeacherDashboard.css';
 
 const TeacherDashboard = (props) => {
-    // Changes components displayed in the body based on state. Clicking on SideNav
-    // changes the state
+
+    // Checks who is logged in. Teacher = True, Student = False. Affects rendering of SideNav and bodyMain Components
+    const [TeacherLoggedIn, setTeacherLoggedIn] = useState(true);
+
+    // Changes components displayed in the body based on state. Clicking on SideNav changes the state
     const [OptionState, setOptionState] = useState(0);
+
+    // Enums to replace option state
+    // const optionState = {
+    //     progressTracker: 'progress',
+    //     studentProfiles: 'studentProfile'
+    // }
 
     return (
         <div className="container">
@@ -26,7 +37,7 @@ const TeacherDashboard = (props) => {
             {/* End of Header */}
             {/* Main Body*/}
             <div className="mainContainer">
-                <SideNav optionStateNav={OptionState} onChange={setOptionState} />
+                <SideNav TeacherLoggedIn={TeacherLoggedIn} optionStateNav={OptionState} onChange={setOptionState} />
                 <div className="bodyContain">
                     <div className="bodyTopButton">
                         <button>Take Screenshot</button>
@@ -37,8 +48,13 @@ const TeacherDashboard = (props) => {
                         <div className="bodyWrapper">
                             {/* Place Teacher Components here */}
 
-                            {OptionState === 0 && <ProgressTracker /> }
-                            {OptionState === 1 && <StudentProfiles /> }
+                            {/* Look into Routers */}
+                            {/* Look into Enum. Use Enums instead of 0s and 1s
+                            OptionState.ProgressTracker... */}
+                            {/* const DIRECTIONS = {​​​​​​​​ Up: 'up', Down: 'down', Left: 'left', Right: 'right', }​​​​​​​​ */}
+
+                            {OptionState === 0 && TeacherLoggedIn && <ProgressTracker /> }
+                            {OptionState === 1 && TeacherLoggedIn && <StudentProfiles /> }
 
                             {/* End of Teacher Components */}
                         </div>
@@ -53,6 +69,5 @@ const TeacherDashboard = (props) => {
         </div>
     );
 };
-
 
 export default TeacherDashboard;
