@@ -3,8 +3,11 @@
 }
 
 footer {
+  font-family: "Nunito", "Open Sans", sans-serif;
+  font-weight: 700;
   text-align: center;
-  padding: 15px 0;
+  padding: 16px 0;
+  color: #707070;
 }
 
 button:focus {

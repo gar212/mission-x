@@ -48,20 +48,25 @@ button {
   margin: 25px auto;
 }
 
+.sideNavExtraContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 25px 0;
+  height: 100%;
+}
+
 .sideNavLower {
   width: 100%;
   display: flex;
   font-size: 0.5rem;
   justify-content: center;
-  /* position: relative; Change this in future. Should use flex positioning instead of relative positioning
-  top: 43%; Change this in future. Should use flex positioning instead of relative positioning */
 }
 
 .sideNavLower li {
   display: flex;
   font-size: 0.5rem;
   font-weight: normal;
-  /* padding: 0 4px; */
   padding: 0 4px 3px;
   text-transform: capitalize;
   flex-wrap: wrap;
@@ -113,13 +118,6 @@ button {
   width: 110px !important;
 }
 
-.toggleNavClosed {
-  float: "left";
-  transform: rotate(180deg);
-  margin-top: 250px;
-  position: absolute;
-}
-
 .sideNavLowerClosed {
   top: 40%;
   flex-direction: column;
@@ -127,4 +125,8 @@ button {
 
 .sideNavLowerNavCenter {
   justify-content: "center";
+}
+
+.sideNavToggleContainerClosed {
+  transform: rotate(180deg);
 }

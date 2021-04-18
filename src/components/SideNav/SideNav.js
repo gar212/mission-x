@@ -16,26 +16,40 @@ function SideNav(props) {
     const slideButtonClicked = () => setSideNavOpened(!sideNavOpened);
 
     // Teacher Side Navigation Array
+    let navContent = [];
     const teacherNav = [
-        { navName: "Progress Tracker", image: SidebarT1 },
-        { navName: "Student Profiles", image: SidebarT2 },
+        { navName: "Progress Tracker", image: SidebarT1},
+        { navName: "Student Profiles", image: SidebarT2},
         { navName: "Help Requests", image: SidebarT3 },
         { navName: "Project Submissions", image: SidebarT4 },
         { navName: "Project Library", image: SidebarT5 }
-    ]
+    ];
+ 
+    // Sam add student nav contents here
+    const studentNav = [
+        { navName: "Learning Objectives", image: SidebarT1 },
+        { navName: "Instructions", image: SidebarT2 },
+    ];
 
+    // Nav Content changes based on TeacherLoggedin state. Either Teacher or student
+    if (props.TeacherLoggedIn) {
+        navContent = teacherNav;
+        
+    } else {
+        navContent = studentNav;
+    }
+    
     // Loop through SideNav Arrays to populate SideNav bar with props
     let sideNavCurrent = [];
 
-    // Use Map. Returns a value and returns array - ForEach does not have a return a new value
-    for (let i = 0; i < teacherNav.length; i++) {
+    for (let i = 0; i < navContent.length; i++) {
         sideNavCurrent.push(
         <SideNavItems
-            name={teacherNav[i].navName}
-            image={teacherNav[i].image}
+            name={navContent[i].navName}
+            image={navContent[i].image}
             sideNavState={sideNavOpened}
-            clickHandler={() => props.onChange(i)}
-            styleHandler={props.optionStateNav === i ? "active": ""}
+            clickHandler={() => props.onChange(navContent[i].navName)}
+            styleHandler={props.optionStateNav === navContent[i].navName ? "active": ""}
             key={i} 
         />
             )
@@ -47,18 +61,20 @@ function SideNav(props) {
             <ul className="sideNavUpper">
                 {sideNavCurrent}
             </ul>
-            <div className="sideNavToggleContainer">
-                <button 
-                    className={sideNavOpened ? "toggleNav": `toggleNav toggleNavClosed`} 
-                    onClick= {slideButtonClicked}>
-                    <i className="fa fa-caret-left"></i>
-                </button>
+            <div className='sideNavExtraContainer'>
+                <div className={sideNavOpened ? "sideNavToggleContainer": `sideNavToggleContainer sideNavToggleContainerClosed`}>
+                    <button 
+                        className="toggleNav"
+                        onClick= {slideButtonClicked}>
+                        <i className="fa fa-caret-left"></i>
+                    </button>
+                </div>
+                <ul className={sideNavOpened ? "sideNavLower": `sideNavLower sideNavLowerClosed`}>
+                    <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-user-circle" /><label>{sideNavOpened ? 'Profile' : ''}</label></a></li>
+                    <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-cog" /><label>{sideNavOpened ? 'Settings' : ''}</label></a></li>
+                    <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-sign-out" /><label>{sideNavOpened ? 'Log out' : ''}</label></a></li>
+                </ul>
             </div>
-            <ul className={sideNavOpened ? "sideNavLower": `sideNavLower sideNavLowerClosed`}>
-                <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-user-circle" /><label>{sideNavOpened ? 'Profile' : ''}</label></a></li>
-                <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-cog" /><label>{sideNavOpened ? 'Settings' : ''}</label></a></li>
-                <li className={sideNavOpened ? "": "sideNavLowerClosed"}><a href="/"><i className="fa fa-sign-out" /><label>{sideNavOpened ? 'Log out' : ''}</label></a></li>
-            </ul>
         </div>
     )
 }

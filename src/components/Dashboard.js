@@ -4,25 +4,44 @@ import React, { useState } from 'react'
 import SideNav from './SideNav/SideNav';
 import ProgressTracker from './ProgressTracker/ProgressTracker';
 import StudentProfiles from './StudentProfiles/StudentProfiles';
+import LearningObjectives from './LearningObjectives/LearningObjectives';
 
 import LogoBlue from '../img/LogoBlue.jpg';
 import MaoriFlag from '../img/MaoriFlag.jpg';
 import NZFlag from '../img/NZFlag.jpg';
-import './TeacherDashboard.css';
+import './Dashboard.css';
 
-const TeacherDashboard = (props) => {
+const Dashboard = (props) => {
+    const OptionEnum = {
+        // Teacher Dashboard
+        progressTracker: 'Progress Tracker',
+        studentProfiles: 'Student Profiles',
+        // Student Dashboard
+        learningObjectives : 'Learning Objectives',
+    }
+
+    const displayMainComponent = (optionEnum) => {
+        switch(optionEnum) {
+            // Teacher Dashboard
+            case OptionEnum.progressTracker:
+                return <ProgressTracker/>;
+            case OptionEnum.studentProfiles:
+                return <StudentProfiles/>;
+
+            // Student Dashboard
+            case OptionEnum.learningObjectives:
+                return <LearningObjectives />
+
+            // Default Case
+            default: console.log('Error with switch statement');     
+        }
+    }
 
     // Checks who is logged in. Teacher = True, Student = False. Affects rendering of SideNav and bodyMain Components
     const [TeacherLoggedIn, setTeacherLoggedIn] = useState(true);
 
     // Changes components displayed in the body based on state. Clicking on SideNav changes the state
-    const [OptionState, setOptionState] = useState(0);
-
-    // Enums to replace option state
-    // const optionState = {
-    //     progressTracker: 'progress',
-    //     studentProfiles: 'studentProfile'
-    // }
+    const [OptionState, setOptionState] = useState(TeacherLoggedIn ? OptionEnum.progressTracker : OptionEnum.LearningObjectives);
 
     return (
         <div className="container">
@@ -37,7 +56,7 @@ const TeacherDashboard = (props) => {
             {/* End of Header */}
             {/* Main Body*/}
             <div className="mainContainer">
-                <SideNav TeacherLoggedIn={TeacherLoggedIn} optionStateNav={OptionState} onChange={setOptionState} />
+                <SideNav TeacherLoggedIn={TeacherLoggedIn} optionStateNav={OptionState} onChange={setOptionState}  />
                 <div className="bodyContain">
                     <div className="bodyTopButton">
                         <button>Take Screenshot</button>
@@ -46,17 +65,7 @@ const TeacherDashboard = (props) => {
                     </div>
                     <div className="bodyMain">
                         <div className="bodyWrapper">
-                            {/* Place Teacher Components here */}
-
-                            {/* Look into Routers */}
-                            {/* Look into Enum. Use Enums instead of 0s and 1s
-                            OptionState.ProgressTracker... */}
-                            {/* const DIRECTIONS = {​​​​​​​​ Up: 'up', Down: 'down', Left: 'left', Right: 'right', }​​​​​​​​ */}
-
-                            {OptionState === 0 && TeacherLoggedIn && <ProgressTracker /> }
-                            {OptionState === 1 && TeacherLoggedIn && <StudentProfiles /> }
-
-                            {/* End of Teacher Components */}
+                            {displayMainComponent(OptionState)}
                         </div>
                     </div>
                 </div>
@@ -70,4 +79,4 @@ const TeacherDashboard = (props) => {
     );
 };
 
-export default TeacherDashboard;
+export default Dashboard;
