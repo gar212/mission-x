@@ -1,5 +1,4 @@
 import React from 'react'
-import TeacherProfile from '../../img/teacherProfile.jpg';
 
 const StudentProfileItem = (props) => {
     return (
