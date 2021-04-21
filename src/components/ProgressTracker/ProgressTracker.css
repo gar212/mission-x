@@ -1,5 +1,6 @@
 .progressContainer {
   color: #6c6c6c;
+  animation: fadeIn 0.4s;
 }
 
 h1,

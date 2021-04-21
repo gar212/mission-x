@@ -31,16 +31,12 @@ console.log(apiData[0].ProfilePic)
 
     return (
       <div className="studentProfileContainer">
-        
         {apiData.map((e) => 
         <StudentProfileItem 
         key={e.UserID}  
         studentName={`${e.FirstName} ${e.LastName}`} 
         image={`data:image/jpg;base64,${btoa(String.fromCharCode(...new Uint8Array(e.ProfilePic.data)))}`}
-        // image={`data:image/jpg;base64,${btoa(String.fromCharCode(...new Uint8Array(apiData[0].ProfilePic.data)))}`}
-
         /> )}
-
       </div>
     )
 }
