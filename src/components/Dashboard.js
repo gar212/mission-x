@@ -20,6 +20,7 @@ const Dashboard = (props) => {
         learningObjectives : 'Learning Objectives',
     }
 
+    // Switch case to return components based on State of OptionState
     const displayMainComponent = (optionEnum) => {
         switch(optionEnum) {
             // Teacher Dashboard
@@ -27,7 +28,6 @@ const Dashboard = (props) => {
                 return <ProgressTracker/>;
             case OptionEnum.studentProfiles:
                 return <StudentProfiles/>;
-
             // Student Dashboard
             case OptionEnum.learningObjectives:
                 return <LearningObjectives />
