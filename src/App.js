@@ -4,6 +4,7 @@ import Dashboard from "./components/Dashboard";
 import ProfileStudent from "./SM/Pages/ProfileStudent";
 import ProjectBuilder1 from "./SM/Pages/ProjectBuilder1";
 import ProjectsPageStudent from "./SM/Pages/ProjectsPageStudent";
+import Test from "./components/Test.js";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route exact path="/profilestudent" component={ProfileStudent} />
       <Route exact path="/projectbuilder1" component={ProjectBuilder1} />
       <Route exact path="/projectpagestudent" component={ProjectsPageStudent} />
+      <Route exact path="/test" component={Test} />
     </div>
   );
 }
