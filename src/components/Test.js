@@ -1,11 +1,11 @@
 import React from "react";
-import TopNav from "./TopNav/TopNav";
+
+import ProfileStudent from "./ProfileStudent/ProfileStudent.jsx";
 
 function Test() {
   return (
     <div>
-      <TopNav />
-      <h1>Test test TEST</h1>;
+      <h1>Test</h1>
     </div>
   );
 }

@@ -1,0 +1,133 @@
+.ProfileStudentLayout {
+  background-color: #eeeeee;
+}
+
+.ProfileStudentLayout {
+  display: flex;
+}
+
+.StudentProfile {
+  width: 774px;
+  height: 1016px;
+}
+
+.StudentProfileFrame {
+  margin: 139px 70px 301px 344px;
+  width: 361px;
+  height: 575px;
+  display: block;
+}
+
+.RectangleFrame {
+  position: absolute;
+  z-index: 1;
+}
+
+.StudentPic,
+.EditProfileButtonText,
+.ChangePhotoButton {
+  z-index: 2;
+  position: absolute;
+}
+
+.StudentPic {
+  height: 175px;
+  width: 175px;
+  margin: 82px 93px 69px 93px;
+}
+
+.ProfileButton {
+  border: 3px solid #43c0f6;
+  border-radius: 8px;
+}
+
+.EditProfileButtonText,
+.ChangePhotoButton {
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Nunito";
+  color: #43c0f6;
+  /*FONT not Thicc enough */
+}
+
+.EditProfileButtonText {
+  margin: 326px 93px 0 93px;
+  padding: 7px 31.5px 6px 31.5px;
+}
+
+.ChangePhotoButton {
+  margin: 395px 93px 0 93px;
+  padding: 7px 20.5px 6px 20.5px;
+}
+
+.StudentInformation {
+  width: 1146px;
+  height: 1016px;
+}
+
+.RectangleFrameLarge {
+  position: absolute;
+  z-index: 1;
+}
+
+.SIHText,
+.SICategory,
+.SIData,
+.BackToProjects {
+  z-index: 2;
+  position: absolute;
+}
+
+.StudentInformationPreview {
+  margin: 140px 326px 164px 0px;
+  width: 820px;
+  height: 712px;
+}
+
+/*SIH = Student Information Heading */
+.SIHText {
+  font-size: 60px;
+  font-family: "Nunito";
+  font-weight: bold;
+  color: #707070;
+  margin-top: 54px;
+  margin-left: 193px;
+}
+
+.SICategory,
+.SIData {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.SICategory {
+  color: #a5a5a5;
+  margin-top: 203px;
+  margin-left: 52px;
+  font-family: "Nunito";
+}
+
+.SICText,
+.SIDText {
+  margin-bottom: 34px;
+}
+
+.SIData {
+  color: #707070;
+  margin-top: 203px;
+  margin-left: 490px;
+  font-family: "Open Sans";
+}
+
+.BackToProjects {
+  margin-left: 1394px;
+  margin-top: 924px;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Nunito";
+  padding: 7px 19px 6px 19px;
+  background-color: #f91c85;
+  color: #ffffff;
+  border-radius: 7px;
+}
+/* NOT THICC ENOUGH */

@@ -1,0 +1,51 @@
+.FooterFormat {
+  height: 634px;
+  background-color: #b2e4fa;
+  display: flex;
+}
+
+.FooterHeading {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Nunito";
+  color: #707070;
+  margin-bottom: 40px;
+}
+
+.FooterText {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Open Sans";
+  color: #707070;
+  line-height: 32px;
+}
+
+.Company,
+.Courses,
+.Support,
+.Legal,
+.LevelUpWorks {
+  margin-top: 154px;
+}
+
+.Company {
+  margin-left: 282px;
+  margin-right: 95px;
+}
+
+.Courses {
+  margin-right: 112px;
+}
+
+.Support {
+  margin-right: 117px;
+}
+
+.Legal {
+  width: 202px;
+  margin-right: 59px;
+}
+
+.LevelUpMargin {
+  margin-top: 9px;
+}

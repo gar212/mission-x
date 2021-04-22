@@ -1,7 +1,7 @@
 import "./App.css";
 import {Route} from "react-router-dom";
 import Dashboard from "./components/Dashboard";
-import ProfileStudent from "./SM/Pages/ProfileStudent";
+import ProfileStudent from "./components/ProfileStudent/ProfileStudent.jsx";
 import ProjectBuilder1 from "./SM/Pages/ProjectBuilder1";
 import ProjectsPageStudent from "./SM/Pages/ProjectsPageStudent";
 import Test from "./components/Test.js";
