@@ -8,7 +8,7 @@ function Footer() {
         <div className="FooterHeading">
           <p>COMPANY</p>
         </div>
-        <div className="FooterText">
+        <div className="FooterText2">
           <p>About Us</p>
           <p>Careers</p>
           <p>Partners</p>
@@ -18,7 +18,7 @@ function Footer() {
         <div className="FooterHeading">
           <p>COURSES</p>
         </div>
-        <div className="FooterText">
+        <div className="FooterText2">
           <p>Register</p>
           <p>Login</p>
           <p>Projects</p>
@@ -31,7 +31,7 @@ function Footer() {
         <div className="FooterHeading">
           <p>SUPPORT</p>
         </div>
-        <div className="FooterText">
+        <div className="FooterText2">
           <p>FAQs</p>
           <p>Helpdesk</p>
           <p>Contact Us</p>
@@ -41,7 +41,7 @@ function Footer() {
         <div className="FooterHeading">
           <p>LEGAL</p>
         </div>
-        <div className="FooterText">
+        <div className="FooterText2">
           <p>Terms & Conditions</p>
           <p>Privacy Policy</p>
           <p></p>
@@ -50,7 +50,7 @@ function Footer() {
       <div className="LevelUpWorks">
         <div className="FooterHeading">
           <div>LevelUpWorks</div>
-          <div className="FooterText LevelUpMargin">
+          <div className="FooterText2 LevelUpMargin">
             <p>
               LevelUp Works is an Auckland-based <br />
               enterprise dedicated to developing game- <br />
