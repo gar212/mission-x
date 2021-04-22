@@ -1,11 +1,9 @@
 import React from "react";
-import ProjectsPageStudent from "./ProjectsPageStudent/ProjectsPageStudent.jsx";
 
 function Test() {
   return (
     <div>
-      <ProjectsPageStudent />
-      <h1>Test</h1>
+      <h1>Add test content - Sam</h1>
     </div>
   );
 }
