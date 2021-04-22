@@ -1,10 +1,10 @@
 import React from "react";
-
-import ProfileStudent from "./ProfileStudent/ProfileStudent.jsx";
+import ProjectsPageStudent from "./ProjectsPageStudent/ProjectsPageStudent.jsx";
 
 function Test() {
   return (
     <div>
+      <ProjectsPageStudent />
       <h1>Test</h1>
     </div>
   );
