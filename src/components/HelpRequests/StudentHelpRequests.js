@@ -1,8 +1,8 @@
 import React from 'react';
 import './StudentHelpRequests.css';
- import StudentHelpRequestItem from './StudentHelpRequestItem';
+import StudentHelpRequestItem from './StudentHelpRequestItem';
 
-const HelpRequests = (props) => {
+const StudentHelpRequests = (props) => {
     return (
          <div className="studentHelpRequestContainer">
              <div className="StudentHelpRequestsHeader">
@@ -22,4 +22,4 @@ const HelpRequests = (props) => {
     )
 }
 
-export default HelpRequests
+export default StudentHelpRequests

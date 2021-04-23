@@ -5,7 +5,7 @@ import SideNav from './SideNav/SideNav';
 import ProgressTracker from './ProgressTracker/ProgressTracker';
 import StudentProfiles from './StudentProfiles/StudentProfiles';
 import LearningObjectives from './LearningObjectives/LearningObjectives';
-import HelpRequests from './HelpRequests/StudentHelpRequests';
+import StudentHelpRequests from './HelpRequests/StudentHelpRequests';
 
 import LogoBlue from '../img/LogoBlue.jpg';
 import MaoriFlag from '../img/MaoriFlag.jpg';
@@ -17,6 +17,7 @@ const Dashboard = (props) => {
         // Teacher Dashboard
         progressTracker: 'Progress Tracker',
         studentProfiles: 'Student Profiles',
+        helpRequests: 'Help Requests',
         // Student Dashboard
         learningObjectives : 'Learning Objectives',
     }
@@ -30,7 +31,7 @@ const Dashboard = (props) => {
             case OptionEnum.studentProfiles:
                 return <StudentProfiles/>;
             case OptionEnum.helpRequests:
-                return <HelpRequests/>
+                return <StudentHelpRequests/>
             // Student Dashboard
             case OptionEnum.learningObjectives:
                 return <LearningObjectives />
