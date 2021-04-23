@@ -1,0 +1,18 @@
+
+
+  h1,
+  h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 800;
+    font-family: "Nunito", "Open Sans", sans-serif;
+    color: #6c6c6c;
+  }
+  
+  .StudentHelpRequestsHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    font-size: 0.8rem;
+  }
+  

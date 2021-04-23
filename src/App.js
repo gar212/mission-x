@@ -12,11 +12,7 @@ function App() {
       <Route exact path="/dashboard" component={Dashboard} />
       <Route exact path="/profilestudent" component={ProfileStudent} />
       <Route exact path="/projectbuilder1" component={ProjectBuilder1} />
-      <Route
-        exact
-        path="/projectspagestudent"
-        component={ProjectsPageStudent}
-      />
+      <Route exact path="/projectspagestudent" component={ProjectsPageStudent}/>
       <Route exact path="/test" component={Test} />
     </div>
   );
