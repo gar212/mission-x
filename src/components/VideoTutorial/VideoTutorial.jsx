@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import "./Instructions.css";
+import "./VideoTutorial.css";
 
-const Instructions = () => {
+const VideoTutorial = () => {
   const [isLoading, setLoading] = useState(true);
   const [apiData, setApiData] = useState([]);
 
@@ -22,10 +22,10 @@ const Instructions = () => {
       {isLoading ? (
         ``
       ) : (
-        <div dangerouslySetInnerHTML={{__html: apiData[0].Instructions}} />
+        <div dangerouslySetInnerHTML={{__html: apiData[0].Video}} />
       )}
     </div>
   );
 };
 
-export default Instructions;
+export default VideoTutorial;

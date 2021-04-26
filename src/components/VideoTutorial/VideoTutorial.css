@@ -1,0 +1,22 @@
+.VideoTutorialContainer {
+  display: flex;
+}
+
+.SelectorCircleVideoLeft,
+.SelectorCircleVideoRight {
+  position: absolute;
+  height: 67px;
+  width: 67px;
+  background-color: #e2eef3;
+  border-radius: 50%;
+  border: 2.5px solid white;
+  top: 350px;
+}
+
+.SelectorCircleVideoLeft {
+  left: 475px;
+}
+
+.SelectorCircleVideoRight {
+  left: 1475px;
+}

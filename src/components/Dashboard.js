@@ -7,6 +7,7 @@ import StudentProfiles from "./StudentProfiles/StudentProfiles";
 import LearningObjectives from "./LearningObjectives/LearningObjectives";
 import StudentHelpRequests from "./HelpRequests/StudentHelpRequests";
 import Instructions from "./Instructions/Instructions";
+import VideoTutorial from "./VideoTutorial/VideoTutorial";
 
 import LogoBlue from "../img/LogoBlue.jpg";
 import MaoriFlag from "../img/MaoriFlag.jpg";
@@ -22,6 +23,7 @@ const Dashboard = (props) => {
     // Student Dashboard
     learningObjectives: "Learning Objectives",
     instructions: "Instructions",
+    videoTutorial: "Video Tutorial",
   };
 
   // Switch case to return components based on State of OptionState
@@ -39,6 +41,8 @@ const Dashboard = (props) => {
         return <LearningObjectives />;
       case OptionEnum.instructions:
         return <Instructions />;
+      case OptionEnum.videoTutorial:
+        return <VideoTutorial />;
 
       // Default Case
       default:
