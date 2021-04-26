@@ -54,3 +54,12 @@ h1 {
   width: 100%;
 }
 /*Change this it is clunky */
+
+.ProjectContainer {
+  margin-left: -5px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 330px); /*Rows, Width */
+  grid-row-gap: 60px; /*Space between rows */
+  grid-column-gap: 68px; /*Space between columns */
+}

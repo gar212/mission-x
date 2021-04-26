@@ -1,0 +1,38 @@
+.CheckboxDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Have to add custom styling to checkbox to make it look nicer, make it bigger and change colors change hover state and check state */
+
+.StudentHelpRequestItem { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+    color: #707070;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0px 75px 0px;
+  }
+
+  .StudentHelpRequestItem img {
+    border-radius: 50%;
+    height: 50px;
+    padding: 10px 10px 100;
+  }
+  
+  .StudentHelpText {
+      flex: auto;
+      padding: 30px;
+
+  }
+
+  .TimeStamp {
+      margin-left: auto;
+      list-style-type: none;
+  }
