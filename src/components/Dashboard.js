@@ -16,6 +16,7 @@ const Dashboard = (props) => {
         // Teacher Dashboard
         progressTracker: 'Progress Tracker',
         studentProfiles: 'Student Profiles',
+
         // Student Dashboard
         learningObjectives : 'Learning Objectives',
     }
@@ -28,20 +29,21 @@ const Dashboard = (props) => {
                 return <ProgressTracker/>;
             case OptionEnum.studentProfiles:
                 return <StudentProfiles/>;
+
             // Student Dashboard
             case OptionEnum.learningObjectives:
                 return <LearningObjectives />
-
+            
             // Default Case
             default: console.log('Error with switch statement');     
         }
     }
 
     // Checks who is logged in. Teacher = True, Student = False. Affects rendering of SideNav and bodyMain Components
-    const [TeacherLoggedIn, setTeacherLoggedIn] = useState(true);
+    const [TeacherLoggedIn, setTeacherLoggedIn] = useState(false);
 
     // Changes components displayed in the body based on state. Clicking on SideNav changes the state
-    const [OptionState, setOptionState] = useState(TeacherLoggedIn ? OptionEnum.progressTracker : OptionEnum.LearningObjectives);
+    const [OptionState, setOptionState] = useState(TeacherLoggedIn ? OptionEnum.progressTracker : OptionEnum.learningObjectives);
 
     return (
         <div className="container">
