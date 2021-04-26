@@ -1,0 +1,28 @@
+.Project {
+  display: flex;
+}
+
+.ProjectImg {
+  width: 329px;
+  height: 221px;
+}
+
+.ProjectHeading {
+  font-size: 30px;
+  font-family: "Nunito";
+  color: #6c6c6c;
+  line-height: 80%;
+}
+
+.ProjectSubheading {
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: #767676;
+  padding-top: 10px;
+}
+
+.ProjectHeading,
+.ProjectSubheading {
+  text-align: center;
+  text-transform: none;
+}

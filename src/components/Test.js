@@ -1,11 +1,8 @@
 import React from "react";
+import Projects from "../SM/Pages/ProjectsPageStudent";
 
 function Test() {
-  return (
-    <div>
-      <h1>Add test content - Sam</h1>
-    </div>
-  );
+  return <Projects />;
 }
 
 export default Test;

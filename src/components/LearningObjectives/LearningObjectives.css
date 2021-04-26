@@ -1,0 +1,57 @@
+.LearningObjectivesHeading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Nunito;
+  color: #707070;
+  text-align: center;
+}
+/*Needs padding */
+
+.LearningObjectivesSubHeading {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Open Sans";
+  color: #707070;
+  text-align: center;
+}
+
+.LearningObjectivesHeading,
+.BlockHeading2 {
+  text-transform: none;
+}
+
+.BlockContainer2 {
+  display: flex;
+}
+
+.BlockHeading2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  font-family: Nunito;
+  color: #707070;
+}
+
+.LookBlock1,
+.ControlBlock1 {
+  width: 201px;
+}
+
+.LookBlock2 {
+  width: 198px;
+}
+
+.LookBlock3 {
+  width: 77px;
+}
+
+.ControlBlock2 {
+  width: 163px;
+}
+
+.MotionBlock1 {
+  width: 197px;
+}
+
+.MotionBlock2 {
+  width: 204px;
+}
