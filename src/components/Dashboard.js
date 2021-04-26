@@ -6,6 +6,7 @@ import ProgressTracker from "./ProgressTracker/ProgressTracker";
 import StudentProfiles from "./StudentProfiles/StudentProfiles";
 import LearningObjectives from "./LearningObjectives/LearningObjectives";
 import StudentHelpRequests from "./HelpRequests/StudentHelpRequests";
+import Instructions from "./Instructions/Instructions";
 
 import LogoBlue from "../img/LogoBlue.jpg";
 import MaoriFlag from "../img/MaoriFlag.jpg";
@@ -20,6 +21,7 @@ const Dashboard = (props) => {
     helpRequests: "Help Requests",
     // Student Dashboard
     learningObjectives: "Learning Objectives",
+    instructions: "Instructions",
   };
 
   // Switch case to return components based on State of OptionState
@@ -35,6 +37,8 @@ const Dashboard = (props) => {
       // Student Dashboard
       case OptionEnum.learningObjectives:
         return <LearningObjectives />;
+      case OptionEnum.instructions:
+        return <Instructions />;
 
       // Default Case
       default:

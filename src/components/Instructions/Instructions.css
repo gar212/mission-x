@@ -1,0 +1,60 @@
+.InstructionsContainer {
+  display: flex;
+}
+
+/*Controls CSS of < & > */
+code {
+  font-size: 54px;
+  padding-left: 18px;
+  color: #f91c85;
+  font-family: "Rubik";
+}
+
+/*Background of < & > */
+.SelectorCircle {
+  height: 67px;
+  width: 67px;
+  background-color: #e2eef3;
+  border-radius: 50%;
+  margin-top: 230px;
+  margin-left: 10px;
+  border: 2.5px solid white;
+}
+
+/*Center div */
+#CenterContainer {
+  margin: 0 78px 0 78px;
+}
+
+.JoinHeading {
+  font-size: 22.5px;
+  padding-bottom: 10px;
+}
+
+.JoinSubheading,
+.ScratchInstructions {
+  font-size: 15px;
+  font-family: "Open Sans";
+  font-weight: 900;
+  color: #707070;
+}
+
+.JoinSubheading {
+  line-height: 300%;
+}
+
+.ScratchInstructions {
+  padding-top: 43px;
+  width: 840px;
+}
+
+/*URL at the end of text above image */
+#JoinLink {
+  color: #f91c85;
+}
+
+/*Image in center div */
+.ScratchImage {
+  padding-top: 35px;
+  width: 840px;
+}
