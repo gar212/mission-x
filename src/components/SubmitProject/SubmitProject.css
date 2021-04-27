@@ -1,0 +1,81 @@
+/*Main Container */
+#SubmitContainer {
+  display: flex;
+}
+
+/*Shared CSS across both sides*/
+
+.SubmitPhoto,
+.ShowTeacher {
+  width: 550px;
+}
+
+#ScratchPreviewImg,
+#TeacherImg {
+  height: 220px;
+  margin: 20px 0 50px 65px;
+}
+
+.SubmitHeading {
+  font-size: 20px;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.SubmitSubheading {
+  font-weight: 900;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Open Sans";
+  color: #707070;
+  margin-bottom: 40px;
+}
+
+.SubmitButton {
+  width: 180px;
+  height: 100px;
+  background-color: #f91c85;
+  margin: auto;
+  border-radius: 20px;
+}
+
+/*Left div */
+
+/*Allows for right div two have two lines and line up the buttons */
+.BottomMargin {
+  padding-bottom: 10px;
+}
+
+#ImgIcon {
+  width: 30px;
+  margin: 20px 0 0 75px;
+}
+
+.ButtonText {
+  color: white;
+  font-size: 18px;
+  text-transform: none;
+  text-align: center;
+}
+
+/*Center dividing div */
+#Divider {
+  border: 1px solid #c7c2c2;
+  height: 621px;
+  width: 1px;
+  margin: 0 2%;
+}
+
+/*Right div */
+.SubHeaderWidth {
+  width: 450px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+#CallTeacherIcon {
+  width: 35px;
+  margin: 20px 0 0 71px;
+}
