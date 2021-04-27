@@ -17,6 +17,7 @@ function ProgressTracker() {
        fetchAPI()
     }, [])
 
+    console.log(apiData);
     return (
         <div className='progressContainer'>
             <div className="progressHeader">

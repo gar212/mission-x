@@ -6,7 +6,7 @@ const ProgressStudent = (props) => {
     const progressCircleItems = [];
     // Change condition based on length. Apply when we implement back-end systems 
     for (let i = 1; i <= 15; i++){
-        progressCircleItems.push(<ProgressCircle courseNumber={i} key={i}  />);
+        progressCircleItems.push(<ProgressCircle className="circleComplete" courseNumber={i} key={i}  />);
     }
 
     return (
