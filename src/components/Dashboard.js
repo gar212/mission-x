@@ -63,7 +63,7 @@ const Dashboard = (props) => {
 
   // Changes components displayed in the body based on state. Clicking on SideNav changes the state
   const [OptionState, setOptionState] = useState(
-    TeacherLoggedIn ? OptionEnum.progressTracker : OptionEnum.LearningObjectives
+    TeacherLoggedIn ? OptionEnum.progressTracker : OptionEnum.learningObjectives
   );
 
   return (
