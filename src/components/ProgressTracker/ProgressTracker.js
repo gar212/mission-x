@@ -17,10 +17,6 @@ function ProgressTracker() {
        fetchAPI()
     }, [])
 
-  if (isLoading){
-    return <div></div>;
-  }
-
     return (
         <div className='progressContainer'>
             <div className="progressHeader">
@@ -28,8 +24,8 @@ function ProgressTracker() {
                 <h2><img className="fileExport" src={FileExport} alt="Export File" />Export as Spreadsheet</h2>
             </div>
             <div className="progressStudentContainer">
-                {/* Maps the apiData array passing in props into a component and returning it */}
-                {apiData.map((e) => <ProgressStudent key={e.UserID} studentName={`${e.FirstName} ${e.LastName}`} completed={e.UserID} />)}
+                {/* Maps the apiData array, passing in props into a component and returning it */}
+                {isLoading ? `` : apiData.map((e) => <ProgressStudent key={e.UserID} studentName={`${e.FirstName} ${e.LastName}`} completed={e.UserID} />)}
             </div>
         </div>
     )

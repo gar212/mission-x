@@ -1,6 +1,5 @@
 .progressContainer {
   color: #6c6c6c;
-  animation: fadeIn 0.4s;
 }
 
 h1,
@@ -18,6 +17,9 @@ h2 {
   font-size: 0.8rem;
 }
 
+.progressStudentContainer {
+  animation: fadeIn 0.4s;
+}
 .fileExport {
   width: 22px;
   margin-right: 5px;

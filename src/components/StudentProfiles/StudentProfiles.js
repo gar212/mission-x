@@ -26,7 +26,7 @@ const StudentProfiles = (props) => {
   if (isLoading){
     return <div></div>;
   }
-console.log(apiData[0].ProfilePic)
+console.log(apiData[0].ProfilePic.data)
 // let base64String = btoa(String.fromCharCode(...new Uint8Array(apiData[0].ProfilePic.data)));
 
     return (
