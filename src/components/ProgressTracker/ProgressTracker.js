@@ -17,6 +17,15 @@ function ProgressTracker() {
        fetchAPI()
     }, [])
 
+if(!isLoading){
+    const b1 = apiData[0].ProjectDone.split(',').map(Number) ;
+    console.log(apiData[5]);
+}
+
+const stringToArray = (string) => {
+   return string.split(',').map(Number);
+}
+
     return (
         <div className='progressContainer'>
             <div className="progressHeader">
@@ -25,7 +34,11 @@ function ProgressTracker() {
             </div>
             <div className="progressStudentContainer">
                 {/* Maps the apiData array, passing in props into a component and returning it */}
-                {isLoading ? `` : apiData.map((e) => <ProgressStudent key={e.UserID} studentName={`${e.FirstName} ${e.LastName}`} completed={e.UserID} />)}
+                {isLoading ? `` : apiData.map((e) => 
+                <ProgressStudent 
+                key={e.UserID} 
+                studentName={`${e.FirstName} ${e.LastName}`} 
+                completed={e.ProjectDone} />)}
             </div>
         </div>
     )

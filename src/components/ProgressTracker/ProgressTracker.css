@@ -17,9 +17,6 @@ h2 {
   font-size: 0.8rem;
 }
 
-.progressStudentContainer {
-  animation: fadeIn 0.4s;
-}
 .fileExport {
   width: 22px;
   margin-right: 5px;
