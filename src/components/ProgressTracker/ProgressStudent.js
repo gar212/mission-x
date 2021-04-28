@@ -3,30 +3,29 @@ import ProgressCircle from './ProgressCircle';
 import './ProgressStudent.css';
 
 const ProgressStudent = (props) => {
+    // Convert string to an array. Removes ',' from string
+    const stringToArray = string => props.completed !== null ? props.completed.split(',').map(Number) : null;
 
-    const progressCircleItems = [];
-    // Change condition based on length. Apply when we implement back-end systems 
-    for (let i = 1; i <= 15; i++){
-        progressCircleItems.push(<ProgressCircle courseNumber={i} key={i}  />);
-    }
-
-    const stringToArray = (string) => {
-        if (props.completed !== null){
-            props.completed.split(',').map(Number);
+    // Returns boolean if array of completedCourses contains number
+    const isDone = courseNo => {
+        if (props.completed !== null) {
+            let arr = stringToArray(props.completed);
+            let findArr = arr.find(number => number === courseNo);
+            if (findArr === courseNo) return true;
         }
     }
 
-    if (props.completed !== null){
-        console.log(props.completed.split(',').map(Number));
+    // Iterates 15 times and stores it into progressCircleItems
+    const progressCircleItems = [];
+    for (let i = 1; i <= 15; i++){
+        progressCircleItems.push(<ProgressCircle done={isDone(i)} courseNumber={i} key={i}  />);
     }
-
-    console.log()
 
     return (
         <div className="progressItem">
             <div className="info">
                 <p className="infoName">{props.studentName}</p>
-                <p className="infoAmount">{props.completed === null ? '0' : props.completed}/15 <span>Projects Completed</span></p>
+                <p className="infoAmount">{props.completed === null ? '0' : stringToArray(props.completed).length}/15 <span>Projects Completed</span></p>
             </div>
             <div className="circleContainer">
                 {progressCircleItems}
