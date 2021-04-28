@@ -5,6 +5,7 @@
   width: 100%;
   padding: 0 50px;
   margin-bottom: 30px;
+  animation: slideIn 0.4s;
 }
 
 .info {
