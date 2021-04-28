@@ -17,10 +17,6 @@ function ProgressTracker() {
        fetchAPI()
     }, [])
 
-if(!isLoading){
-    const b1 = apiData[0].ProjectDone.split(',').map(Number) ;
-    console.log(apiData[5]);
-}
 
 const stringToArray = (string) => {
    return string.split(',').map(Number);

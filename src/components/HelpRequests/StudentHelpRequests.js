@@ -28,7 +28,6 @@ console.log(apiData[0].ProfilePic.data)
 
     
     return (
-
          <div className="studentHelpRequestContainer">
              <div className="StudentHelpRequestsHeader">
                 <h1>Student Help Requests</h1>

@@ -1,31 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ProgressCircle from './ProgressCircle';
 import './ProgressStudent.css';
 
 const ProgressStudent = (props) => {
-
-    const [isLoading, setLoading] = useState(true);
-    const [apiData, setApiData] = useState([]);
-
-    useEffect(() => {
-        async function fetchAPI() {
-            let response = await fetch('/progresstracker')
-            response = await response.json()
-            setApiData(response);
-            setLoading(false);
-        }
-       fetchAPI()
-    }, [])
-
-
-
-
 
     const progressCircleItems = [];
     // Change condition based on length. Apply when we implement back-end systems 
     for (let i = 1; i <= 15; i++){
         progressCircleItems.push(<ProgressCircle courseNumber={i} key={i}  />);
     }
+
+    const stringToArray = (string) => {
+        if (props.completed !== null){
+            props.completed.split(',').map(Number);
+        }
+    }
+
+    if (props.completed !== null){
+        console.log(props.completed.split(',').map(Number));
+    }
+
+    console.log()
 
     return (
         <div className="progressItem">
