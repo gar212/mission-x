@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    animation: fadeIn 0.4s;
 }
 
 /* Have to add custom styling to checkbox to make it look nicer, make it bigger and change colors change hover state and check state */
