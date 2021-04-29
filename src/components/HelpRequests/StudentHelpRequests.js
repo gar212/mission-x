@@ -13,7 +13,7 @@ const StudentHelpRequests = (props) => {
 
     useEffect(() => {
         async function fetchAPI() {
-            let response = await fetch('/studentprofiles')
+            let response = await fetch('/helprequests')
             response = await response.json()
             setApiData(response);
             setLoading(false);
@@ -24,7 +24,6 @@ const StudentHelpRequests = (props) => {
   if (isLoading){
     return <div></div>;
   }
-console.log(apiData[0].ProfilePic.data)
 
     
     return (
@@ -35,12 +34,13 @@ console.log(apiData[0].ProfilePic.data)
                 <h2>Reply</h2>
                 <h2>Mark as Done</h2>
             </div>
-            {apiData.map((help) => 
+            {apiData.map((e) => 
         <StudentHelpRequestItem 
-        key={help.UserID}  
-        studentName={`${help.FirstName}`} 
-        date={'${help.DateCreated}'}
-        image={`data:image/jpg;base64,${btoa(String.fromCharCode(...new Uint8Array(help.ProfilePic.data)))}`}
+        key={e.UserID}  
+        studentName={`${e.FirstName} ${e.LastName}`} 
+        date={e.date}
+        time={e.time}
+        image={`data:image/jpg;base64,${btoa(String.fromCharCode(...new Uint8Array(e.ProfilePic.data)))}`}
         /> )}
 
 
@@ -48,5 +48,7 @@ console.log(apiData[0].ProfilePic.data)
       </div>
     )
 }
+
+
 
 export default StudentHelpRequests

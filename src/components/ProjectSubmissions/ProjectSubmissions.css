@@ -1,0 +1,13 @@
+.ProjectSubmissionsHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+.ProjectSubmissionsHeader h2{
+    font-size: 18px;
+    font-family: open sans;
+
+}

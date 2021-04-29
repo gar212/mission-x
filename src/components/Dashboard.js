@@ -62,7 +62,7 @@ const Dashboard = (props) => {
   };
 
   // Checks who is logged in. Teacher = True, Student = False. Affects rendering of SideNav and bodyMain Components
-  const [TeacherLoggedIn, setTeacherLoggedIn] = useState(false);
+  const [TeacherLoggedIn, setTeacherLoggedIn] = useState(true);
 
   // Changes components displayed in the body based on state. Clicking on SideNav changes the state
   const [OptionState, setOptionState] = useState(
