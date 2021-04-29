@@ -12,9 +12,10 @@ const StudentHelpRequestItem = (props) => {
                 
                 {/* Will update student name and timestamp once we learn more about backend */}
                 <p className="StudentHelpText">{props.studentName} needs help with their project</p>
+                {/* TimeStamp Hardcoded till I get it to work with backend */}
                 <ul className="TimeStamp">
-                    <li>Date</li>
-                    <li>Time</li>
+                    <li>{props.date}</li>
+                    <li>{props.time}</li>
                 </ul>
             </div>
         </div>

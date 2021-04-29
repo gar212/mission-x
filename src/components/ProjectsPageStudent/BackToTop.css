@@ -1,0 +1,15 @@
+#BackToTop {
+  margin: 178px 0 155px 1499px;
+  background-color: #e5ab2c;
+  border-radius: 7px;
+  width: 175px;
+  height: 35px;
+  text-align: center;
+}
+
+#BackToTopTxt {
+  color: white;
+  font-family: Nunito;
+  font-size: 16px;
+  padding-top: 8px;
+}

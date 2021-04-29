@@ -1,0 +1,34 @@
+#Popup {
+  position: absolute;
+  left: 1525px;
+  top: 55px;
+  z-index: 2;
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #fdf7d3;
+}
+
+#square {
+  width: 143px;
+  height: 151px;
+  background-color: #fdf7d3;
+}
+
+.MyProfile {
+  padding-top: 20px;
+}
+
+.PopupOption {
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: #707070;
+  text-transform: none;
+  padding-bottom: 18px;
+  padding: 0 0 18px 8px;
+  text-align: justify;
+}
