@@ -21,7 +21,7 @@ function ProfileStudent(props) {
     fetchAPI();
   }, []);
 
-  console.log(apiData);
+  console.log(apiData[3]);
 
   if (isLoading) {
     return <div></div>;
