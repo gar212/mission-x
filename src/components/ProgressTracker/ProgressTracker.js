@@ -7,6 +7,7 @@ function ProgressTracker() {
     const [isLoading, setLoading] = useState(true);
     const [apiData, setApiData] = useState([]);
 
+    // Fetch API. Runs once per component render
     useEffect(() => {
         async function fetchAPI() {
             let response = await fetch('/progresstracker')
@@ -25,7 +26,11 @@ function ProgressTracker() {
             </div>
             <div className="progressStudentContainer">
                 {/* Maps the apiData array, passing in props into a component and returning it */}
-                {isLoading ? `` : apiData.map((e) => <ProgressStudent key={e.UserID} studentName={`${e.FirstName} ${e.LastName}`} completed={e.UserID} />)}
+                {isLoading ? `` : apiData.map((e) => 
+                <ProgressStudent 
+                key={e.UserID} 
+                studentName={`${e.FirstName} ${e.LastName}`} 
+                completed={e.ProjectDone} />)}
             </div>
         </div>
     )

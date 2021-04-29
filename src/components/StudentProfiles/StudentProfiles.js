@@ -3,12 +3,6 @@ import './StudentProfiles.css';
 import StudentProfileItem from './StudentProfileItem';
 
 const StudentProfiles = (props) => {
-    // let studentProfileArray = [];
-    // let studentProfileJoin = [];
-    // for (let i = 0; i < studentProfileArray.length; i++) {
-    //     studentProfileJoin.push(<StudentProfileItem name='Default Name' key={i} />)
-    // };
-
     const [isLoading, setLoading] = useState(true);
     const [apiData, setApiData] = useState([]);
 
@@ -26,8 +20,6 @@ const StudentProfiles = (props) => {
   if (isLoading){
     return <div></div>;
   }
-console.log(apiData[0].ProfilePic.data)
-// let base64String = btoa(String.fromCharCode(...new Uint8Array(apiData[0].ProfilePic.data)));
 
     return (
       <div className="studentProfileContainer">

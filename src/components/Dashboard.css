@@ -114,9 +114,13 @@ button:focus {
 
 .bodyWrapper {
   height: 90%;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-right: 50px;
   scrollbar-width: thin;
+}
+
+.hideScrollbar {
+  overflow-y: hidden !important;
 }
 
 .bodyWrapper::-webkit-scrollbar {

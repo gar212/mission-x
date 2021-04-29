@@ -8,10 +8,10 @@ const StudentHelpRequestItem = (props) => {
             <input type="Checkbox"></input>
             <div className="StudentHelpRequestItem">
                 {/* Just a place holder image atm will be dynamic once updated */}
-                <img src={TeacherProfile} alt="Profile" />
+                <img src={props.image} alt="Profile" />
                 
                 {/* Will update student name and timestamp once we learn more about backend */}
-                <p className="StudentHelpText">StudentName needs help with his project</p>
+                <p className="StudentHelpText">{props.studentName} needs help with their project</p>
                 <ul className="TimeStamp">
                     <li>Date</li>
                     <li>Time</li>
