@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import './StudentHelpRequests.css';
 import StudentHelpRequestItem from './StudentHelpRequestItem';
+import DoneIcon from "../../img/HelpRequests/Icon material-done.png";
+import ReplyIcon from "../../img/HelpRequests/Icon material-reply.png";
+
 
 const StudentHelpRequests = (props) => {
     
@@ -9,7 +12,6 @@ const StudentHelpRequests = (props) => {
     const [apiData, setApiData] = useState([]);
 
 
-//using backend from studentprofiles as a place holder while sorting out helprequests backend
 
     useEffect(() => {
         async function fetchAPI() {
@@ -31,8 +33,8 @@ const StudentHelpRequests = (props) => {
              <div className="StudentHelpRequestsHeader">
                 <h1>Student Help Requests</h1>
                 {/* Still have to add icons and get reply and mark as done on their own line */}
-                <h2>Reply</h2>
-                <h2>Mark as Done</h2>
+                <h2><img src={ReplyIcon} align="left" hspace="10"/>Reply</h2>
+                <h2><img src={DoneIcon} align="left" hspace="10" />Mark as Done</h2>
             </div>
             {apiData.map((e) => 
         <StudentHelpRequestItem 

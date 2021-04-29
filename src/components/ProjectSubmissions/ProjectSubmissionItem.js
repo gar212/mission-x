@@ -14,7 +14,9 @@ const ProjectSubmissionItem = (props) => {
             <p className="StudentHelpText">{props.studentName} submitted their project</p>
             <img id="Project" src="http://levels.levelupworks.com/wp-content/uploads/2019/09/image-67.png"></img>
             <div className="EnlargePhotoContainer">
-            <p><img src={zoom} />ENLARGE PHOTO</p>
+            <a href="http://levels.levelupworks.com/wp-content/uploads/2019/09/image-67.png" target="_blank">
+            <p><img className="ZoomImage" src={zoom} align="left" />ENLARGE PHOTO</p>
+            </a>
             </div>
             </div>
             <ul className="TimeStamp">

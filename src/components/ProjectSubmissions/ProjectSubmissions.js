@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import './ProjectSubmissions.css';
 import ProjectSubmissionItem from './ProjectSubmissionItem';
+import DownloadIcon from "../../img/ProjectSubmissions/Icon material-file-download.png";
+import CompleteIcon from "../../img/ProjectSubmissions/Icon material-done.png";
+
 
 
 const ProjectSubmissions = (props) => {
@@ -29,8 +32,8 @@ if (isLoading){
          <div className="ProjectSubmissionsContainter">
            <div className="ProjectSubmissionsHeader">
             <h1>Project Submissions</h1>
-            <h2>Download Files</h2>
-            <h2>Mark as complete project</h2>
+            <h2><img src={DownloadIcon} align="left" hspace="10" /> Download Files</h2>
+            <h2><img src={CompleteIcon} align="left" hspace="10" /> Mark as complete project</h2>
           </div>
           {apiData.map((e) => 
         <ProjectSubmissionItem 
