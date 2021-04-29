@@ -32,7 +32,7 @@ function SideNav(props) {
     {navName: "Project Library", image: SidebarT5},
   ];
 
-  // Sam add student nav contents here
+  // Student nav contents here
   const studentNav = [
     {navName: "Learning Objectives", image: LearningObjectives},
     {navName: "Instructions", image: Instructions},
@@ -44,11 +44,7 @@ function SideNav(props) {
   ];
 
   // Nav Content changes based on TeacherLoggedin state. Either Teacher or student
-  if (props.TeacherLoggedIn) {
-    navContent = teacherNav;
-  } else {
-    navContent = studentNav;
-  }
+  if (props.TeacherLoggedIn) {navContent = teacherNav;} else { navContent = studentNav;}
 
   // Loop through SideNav Arrays to populate SideNav bar with props
   let sideNavCurrent = [];
@@ -70,47 +66,16 @@ function SideNav(props) {
 
   return (
     <div className={sideNavOpened ? "sideNav" : `sideNav sideNavClosed`}>
-      <img
-        className="profileImage"
-        src={TeacherProfile}
-        alt="Teacher Profile"
-      />
+      <img className="profileImage" src={TeacherProfile} alt="Teacher Profile"/>
       <ul className="sideNavUpper">{sideNavCurrent}</ul>
       <div className="sideNavExtraContainer">
-        <div
-          className={
-            sideNavOpened
-              ? "sideNavToggleContainer"
-              : `sideNavToggleContainer sideNavToggleContainerClosed`
-          }
-        >
-          <button className="toggleNav" onClick={slideButtonClicked}>
-            <i className="fa fa-caret-left"></i>
-          </button>
+        <div className={sideNavOpened? "sideNavToggleContainer" : `sideNavToggleContainer sideNavToggleContainerClosed`}>
+          <button className="toggleNav" onClick={slideButtonClicked}><i className="fa fa-caret-left"></i></button>
         </div>
-        <ul
-          className={
-            sideNavOpened ? "sideNavLower" : `sideNavLower sideNavLowerClosed`
-          }
-        >
-          <li className={sideNavOpened ? "" : "sideNavLowerClosed"}>
-            <a href="/">
-              <i className="fa fa-user-circle" />
-              <label>{sideNavOpened ? "Profile" : ""}</label>
-            </a>
-          </li>
-          <li className={sideNavOpened ? "" : "sideNavLowerClosed"}>
-            <a href="/">
-              <i className="fa fa-cog" />
-              <label>{sideNavOpened ? "Settings" : ""}</label>
-            </a>
-          </li>
-          <li className={sideNavOpened ? "" : "sideNavLowerClosed"}>
-            <a href="/">
-              <i className="fa fa-sign-out" />
-              <label>{sideNavOpened ? "Log out" : ""}</label>
-            </a>
-          </li>
+        <ul className={sideNavOpened ? "sideNavLower" : `sideNavLower sideNavLowerClosed`}>
+          <li className={sideNavOpened ? "" : "sideNavLowerClosed"}><a href="/"><i className="fa fa-user-circle" /><label>{sideNavOpened ? "Profile" : ""}</label></a></li>
+          <li className={sideNavOpened ? "" : "sideNavLowerClosed"}><a href="/"><i className="fa fa-cog" /><label>{sideNavOpened ? "Settings" : ""}</label></a></li>
+          <li className={sideNavOpened ? "" : "sideNavLowerClosed"}><a href="/"><i className="fa fa-sign-out" /><label>{sideNavOpened ? "Log out" : ""}</label></a></li>
         </ul>
       </div>
     </div>
