@@ -1,19 +1,27 @@
 import React from 'react'
-import TeacherProfile from '../../img/teacherProfile.jpg';
 import './ProjectSubmissionItem.css';
+import zoom from "../../img/ProjectSubmissions/Icon material-zoom-in@2x.png";
 
 const ProjectSubmissionItem = (props) => {
     return (
         <div className="ProjectSubmissionItem">
             {/* Just a place holder image atm will be dynamic once updated */}
-            <img src={TeacherProfile} alt="Profile" />
-            
+            <div className="ProfilePic">
+            <img src={props.image} alt="Profile" />
+            </div>
+            <div className="Submit">
             {/* Will update student name and timestamp once we learn more about backend */}
-            <p className="StudentHelpText">StudentName needs help with his project</p>
+            <p className="StudentHelpText">{props.studentName} submitted their project</p>
+            <img id="Project" src="http://levels.levelupworks.com/wp-content/uploads/2019/09/image-67.png"></img>
+            <div className="EnlargePhotoContainer">
+            <p><img src={zoom} />ENLARGE PHOTO</p>
+            </div>
+            </div>
             <ul className="TimeStamp">
-                <li>Date</li>
-                <li>Time</li>
+                <li>{props.date}</li>
+                <li>{props.time}</li>
             </ul>
+
         </div>
     )
 }
