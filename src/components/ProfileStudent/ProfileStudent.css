@@ -68,6 +68,8 @@
 .RectangleFrameLarge {
   position: absolute;
   z-index: 1;
+  width: 900px;
+  height: 700px;
 }
 
 .SIHText,

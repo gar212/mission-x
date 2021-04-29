@@ -32,7 +32,7 @@ function ProfileStudent(props) {
         firstName={apiData[3].FirstName}
         lastName={apiData[3].LastName}
         school={apiData[3].School}
-        dOB={apiData[3].date}
+        // dOB={apiData[3].date}
         contactNumber={apiData[3].ContactNumber}
         email={apiData[3].Email}
       />

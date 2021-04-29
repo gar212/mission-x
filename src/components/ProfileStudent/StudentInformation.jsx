@@ -49,7 +49,7 @@ function StudentInformation(props) {
             <p className="SIDText">{props.school}</p>
             <p className="SIDText">Jasmina Salvador</p>
             <p className="SIDText">Beginner</p>
-            <p className="SIDText">{props.dOB}</p>
+            <p className="SIDText">01 December 2002</p>
             <p className="SIDText">{props.contactNumber}</p>
             <p className="SIDText">{props.email}</p>
           </div>
