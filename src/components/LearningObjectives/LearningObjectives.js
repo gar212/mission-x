@@ -19,7 +19,7 @@ const LearningObjectives = () => {
   console.log(apiData);
 
   return (
-    <div>
+    <div className="LearningObjectives">
       {isLoading ? (
         ``
       ) : (

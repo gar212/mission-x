@@ -17,7 +17,6 @@ import NZFlag from "../img/NZFlag.jpg";
 import "./Dashboard.css";
 
 const Dashboard = (props) => {
-
   const OptionEnum = {
     // Teacher Dashboard
     progressTracker: "Progress Tracker",
@@ -89,12 +88,18 @@ const Dashboard = (props) => {
         />
         <div className="bodyContain">
           <div className="bodyTopButton">
-            <button onClick={() => setTeacherLoggedIn(!TeacherLoggedIn)}>Take Screenshot</button>
+            <button onClick={() => setTeacherLoggedIn(!TeacherLoggedIn)}>
+              Take Screenshot
+            </button>
             <button>Help Center</button>
             <button>More Projects</button>
           </div>
           <div className="bodyMain">
-              <div className={TeacherLoggedIn ? "bodyWrapper" : "bodyWrapper hideScrollbar"}>
+            <div
+              className={
+                TeacherLoggedIn ? "bodyWrapper" : "bodyWrapper hideScrollbar"
+              }
+            >
               {displayMainComponent(OptionState)}
             </div>
           </div>

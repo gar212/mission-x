@@ -6,14 +6,18 @@ function Projects(props) {
     <div className="Project">
       <div>
         <div>
-          <img classname="ProjectImg" src={props.image} alt="Placeholder" />
+          <a href="http://localhost:3000/dashboard">
+            <img classname="ProjectImg" src={props.image} alt="Placeholder" />
+          </a>
         </div>
         <div>
-          <h1 className="ProjectHeading">{props.subject}</h1>
+          <a href="http://localhost:3000/dashboard">
+            <h1 className="ProjectHeading">{props.subject}</h1>
 
-          <p className="ProjectSubheading">
-            {props.course} | {props.activity}
-          </p>
+            <p className="ProjectSubheading">
+              {props.course} | {props.activity}
+            </p>
+          </a>
         </div>
       </div>
     </div>
