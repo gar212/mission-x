@@ -57,7 +57,7 @@ const Dashboard = (props) => {
 
       // Default Case
       default:
-        console.log("Error with switch statement");
+        console.log("Error with switch statement or does not exist");
     }
   };
 
