@@ -119,6 +119,10 @@ button:focus {
   scrollbar-width: thin;
 }
 
+.hideScrollbar {
+  overflow-y: hidden !important;
+}
+
 .bodyWrapper::-webkit-scrollbar {
   width: 20px;
   border-radius: 20px;
