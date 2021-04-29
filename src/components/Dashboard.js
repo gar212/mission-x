@@ -64,9 +64,7 @@ const Dashboard = (props) => {
   const [TeacherLoggedIn, setTeacherLoggedIn] = useState(true);
 
   // Changes components displayed in the body based on state. Clicking on SideNav changes the state
-  const [OptionState, setOptionState] = useState(
-    TeacherLoggedIn ? OptionEnum.progressTracker : OptionEnum.learningObjectives
-  );
+  const [OptionState, setOptionState] = useState(TeacherLoggedIn ? OptionEnum.progressTracker : OptionEnum.learningObjectives);
 
   return (
     <div className="container">
@@ -88,25 +86,18 @@ const Dashboard = (props) => {
         />
         <div className="bodyContain">
           <div className="bodyTopButton">
-            <button onClick={() => setTeacherLoggedIn(!TeacherLoggedIn)}>
-              Take Screenshot
-            </button>
+            <button onClick={() => setTeacherLoggedIn(!TeacherLoggedIn)}>Take Screenshot</button>
             <button>Help Center</button>
             <button>More Projects</button>
           </div>
           <div className="bodyMain">
-            <div
-              className={
-                TeacherLoggedIn ? "bodyWrapper" : "bodyWrapper hideScrollbar"
-              }
-            >
+            <div className={TeacherLoggedIn ? "bodyWrapper" : "bodyWrapper hideScrollbar"}>
               {displayMainComponent(OptionState)}
             </div>
           </div>
         </div>
       </div>
       {/* End of Main Body */}
-
       <footer>
         <p>© Levelup Works 2020</p>
       </footer>
