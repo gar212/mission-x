@@ -10,6 +10,7 @@ import Instructions from "./Instructions/Instructions";
 import VideoTutorial from "./VideoTutorial/VideoTutorial";
 import MakeProject from "./MakeProject/MakeProject";
 import SubmitProject from "./SubmitProject/SubmitProject";
+import ProjectSubmissions from "./ProjectSubmissions/ProjectSubmissions";
 
 import LogoBlue from "../img/LogoBlue.jpg";
 import MaoriFlag from "../img/MaoriFlag.jpg";
@@ -22,6 +23,7 @@ const Dashboard = (props) => {
     progressTracker: "Progress Tracker",
     studentProfiles: "Student Profiles",
     helpRequests: "Help Requests",
+    projectSubmissions: "Project Submissions",
     // Student Dashboard
     learningObjectives: "Learning Objectives",
     instructions: "Instructions",
@@ -41,7 +43,7 @@ const Dashboard = (props) => {
       case OptionEnum.helpRequests:
         return <StudentHelpRequests />;
       case OptionEnum.projectSubmissions:
-        return <projectSubmissions />;
+        return <ProjectSubmissions />;
       // Student Dashboard
       case OptionEnum.learningObjectives:
         return <LearningObjectives />;
