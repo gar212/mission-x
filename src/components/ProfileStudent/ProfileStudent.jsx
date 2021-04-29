@@ -1,15 +1,45 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./ProfileStudent.css";
 import TopNav from "../TopNav/TopNav";
 import RectangleFrame from "../../img/ProfileStudent/RectangleFrame.png";
 import StudentPic from "../../img/ProfileStudent/StudentPic.png";
 import RectangleFrameLarge from "../../img/ProfileStudent/Rectangle 271.png";
 import Footer from "../Footer/Footer";
+import StudentInformation from "./StudentInformation";
 
-function ProfileStudent() {
+function ProfileStudent(props) {
+  const [isLoading, setLoading] = useState(true);
+  const [apiData, setApiData] = useState([]);
+
+  useEffect(() => {
+    async function fetchAPI() {
+      let response = await fetch("/studentprofiles");
+      response = await response.json();
+      setApiData(response);
+      setLoading(false);
+    }
+    fetchAPI();
+  }, []);
+
+  console.log(apiData);
+
+  if (isLoading) {
+    return <div></div>;
+  }
+
   return (
     <div>
       <TopNav />
+      <StudentInformation
+        key={apiData[3].UserID}
+        firstName={apiData[3].FirstName}
+        lastName={apiData[3].LastName}
+        school={apiData[3].School}
+        dOB={apiData[3].DateOfBirth}
+        contactNumber={apiData[3].ContactNumber}
+        email={apiData[3].Email}
+      />
+
       <div className="ProfileStudentLayout">
         <div className="StudentProfile">
           <div className="StudentProfileFrame">
@@ -64,6 +94,7 @@ function ProfileStudent() {
           <p>BACK TO PROJECTS</p>
         </div>
       </div>
+
       <Footer />
     </div>
   );
