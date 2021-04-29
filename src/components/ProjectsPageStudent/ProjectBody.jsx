@@ -26,7 +26,7 @@ function ProjectBody() {
           <Projects
             key={e.ProjectID}
             image={e.MainImage}
-            // image={`data:image/jpg;base64,${btoa(
+            // image={`data:image/PNG;base64,${btoa(
             //   String.fromCharCode(...new Uint8Array(e.Image.data))
             // )}`} //Usually MainImage
             subject={e.SubjectMatter2} //e.g. Introduction

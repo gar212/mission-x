@@ -1,72 +1,8 @@
-.LevelBar {
-  display: flex;
-  margin: 44.5px 0 52.5px -8px;
-}
-
-.LevelOption,
-.Selected {
-  font-family: "Open Sans";
-  font-size: 13px;
-}
-
-.LevelOption {
-  color: #000000;
-}
-
-.Selected {
-  color: white;
-}
-
-#Beginner,
-#Intermediate,
-#Advanced,
-#Select25,
-#Select50,
-#Select100 {
-  height: 21px;
-  text-align: center;
-}
-
-#Beginner,
-#Select25 {
-  background-color: #65affa;
-  border: 1.5px solid #559ae1;
-}
-
-#Intermediate,
-#Advanced,
-#Select50,
-#Select100 {
-  background-color: #f7f0f0;
-  border: 1.5px solid #ededed;
-}
-
-#Beginner {
-  width: 100px;
-
-  border-radius: 3px 0 0 3px;
-}
-
-#Intermediate {
-  width: 125px;
-}
-
-/*Add divider here */
-
-#Advanced {
-  width: 120.5px;
-  border-radius: 0 3px 3px 0;
-}
-
-#Show {
-  font-size: 16px;
-  font-family: "Open Sans";
-
-  margin: 0 21px 0 564px;
-}
-
-#Select25,
-#Select50,
-#Select100 {
-  width: 50px;
+.ProjectContainer {
+  margin-left: -5px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 330px); /*Rows, Width */
+  grid-row-gap: 60px; /*Space between rows */
+  grid-column-gap: 68px; /*Space between columns */
 }

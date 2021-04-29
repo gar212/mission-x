@@ -68,8 +68,6 @@
 .RectangleFrameLarge {
   position: absolute;
   z-index: 1;
-  width: 900px;
-  height: 700px;
 }
 
 .SIHText,
@@ -117,7 +115,7 @@
 .SIData {
   color: #707070;
   margin-top: 203px;
-  margin-left: 380px;
+  margin-left: 490px;
   font-family: "Open Sans";
 }
 

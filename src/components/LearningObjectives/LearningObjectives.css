@@ -38,14 +38,21 @@
   padding-bottom: 18px;
 }
 
+/* .LookBlocks2,
+.ControlBlocks2,
+.MotionBlocks2 {
+  width: 350px;
+} */
+
+.ControlBlocks2,
+.MotionBlocks2 {
+  margin-left: 5%;
+}
+
 .LookBlocksLeft,
 .ControlBlocksLeft,
 .MotionBlocksLeft {
   padding-right: 20px;
-}
-
-.LookBlocksRight {
-  padding-right: 34px;
 }
 
 .ControlBlocksRight {
@@ -53,24 +60,21 @@
 }
 
 .LookBlock1,
-.ControlBlock1 {
+.ControlBlock1,
+.MotionBlock1 {
   width: 180px;
 }
 
 .LookBlock2 {
-  width: 180px;
+  width: 160px;
 }
 
 .LookBlock3 {
-  width: 70px;
+  width: 60px;
 }
 
 .ControlBlock2 {
-  width: 146px;
-}
-
-.MotionBlock1 {
-  width: 180px;
+  width: 150px;
 }
 
 .MotionBlock2 {
