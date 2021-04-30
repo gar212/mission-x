@@ -47,20 +47,9 @@
       width: 50%;
 }
 
-.StudentHelpText p{
-    flex: auto;
-    padding: 30px;
-    font-size: 20px;
-    display: inline;
 
-} 
 
-.EnlargePhotoContainer {
-    display: inline-block;
-    text-align: left;
-}
 
-.EnlargePhotoContainer img{
-    height: 25%;
-    width: 25%;
-}
+
+
+  

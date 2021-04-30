@@ -3,6 +3,8 @@ import {Route} from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import ProfileStudent from "./components/ProfileStudent/ProfileStudent.jsx";
 import ProjectsPageStudent from "./components/ProjectsPageStudent/ProjectsPageStudent.jsx";
+import HomeDashboard from "./components/HOME/HomeDashboard";
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         path="/projectspagestudent"
         component={ProjectsPageStudent}
       />
+      <Route exact path="/home" component={HomeDashboard} />
     </div>
   );
 }

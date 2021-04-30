@@ -1,6 +1,6 @@
 import React from 'react'
 import './ProjectSubmissionItem.css';
-import zoom from "../../img/ProjectSubmissions/Icon material-zoom-in@2x.png";
+import zoom from "../../img/ProjectSubmissions/Icon material-zoom-in.png";
 
 const ProjectSubmissionItem = (props) => {
     return (
