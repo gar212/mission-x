@@ -99,11 +99,7 @@ const Dashboard = (props) => {
             <button>More Projects</button>
           </div>
           <div className="bodyMain">
-            <div
-              className={
-                TeacherLoggedIn ? "bodyWrapper" : "bodyWrapper hideScrollbar"
-              }
-            >
+            <div className={TeacherLoggedIn ? "bodyWrapper" : "bodyWrapper hideScrollbar"}>
               {displayMainComponent(OptionState)}
             </div>
           </div>
