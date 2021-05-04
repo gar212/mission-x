@@ -18,6 +18,14 @@ import NZFlag from "../img/NZFlag.jpg";
 import "./Dashboard.css";
 
 const Dashboard = (props) => {
+  // Checks who is logged in. Teacher = True, Student = False. Affects rendering of SideNav and bodyMain Components
+  const [TeacherLoggedIn, setTeacherLoggedIn] = useState(true);
+
+  // Changes components displayed in the body based on state. Clicking on SideNav changes the state
+  const [OptionState, setOptionState] = useState(
+    TeacherLoggedIn ? "Progress Tracker" : "Learning Objectives"
+  );
+
   const OptionEnum = {
     // Teacher Dashboard
     progressTracker: "Progress Tracker",
@@ -62,13 +70,7 @@ const Dashboard = (props) => {
     }
   };
 
-  // Checks who is logged in. Teacher = True, Student = False. Affects rendering of SideNav and bodyMain Components
-  const [TeacherLoggedIn, setTeacherLoggedIn] = useState(true);
 
-  // Changes components displayed in the body based on state. Clicking on SideNav changes the state
-  const [OptionState, setOptionState] = useState(
-    TeacherLoggedIn ? OptionEnum.progressTracker : OptionEnum.learningObjectives
-  );
 
   return (
     <div className="container">
@@ -97,11 +99,7 @@ const Dashboard = (props) => {
             <button>More Projects</button>
           </div>
           <div className="bodyMain">
-            <div
-              className={
-                TeacherLoggedIn ? "bodyWrapper" : "bodyWrapper hideScrollbar"
-              }
-            >
+            <div className={TeacherLoggedIn ? "bodyWrapper" : "bodyWrapper hideScrollbar"}>
               {displayMainComponent(OptionState)}
             </div>
           </div>
