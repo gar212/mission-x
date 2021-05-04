@@ -1,0 +1,159 @@
+.Modal1 {
+    max-width: 1450px;
+    height: 100%;
+  }
+  
+  .Faded {
+    max-width: 100vw;
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.5) ;
+  }
+  .ModalBox {
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    position: Absolute;
+    left: 350px;
+    top: 30px;
+  }
+  .Students {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin: 0px;
+    top: 50px;
+    left: 70px;
+  }
+  .Teachers {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin: 0px;
+    top: 50px;
+    left: 370px;
+  }
+  .Line {
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    right: 300px;
+    z-index: 2000;
+  }
+  .LoginS {
+    color: #767676;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+  
+  }
+  .LoginT {
+    color: #767676;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+  }
+  .LIS {
+    color: #767676;
+    margin: 0px 10px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: none;
+    font-family: "Nunito";
+    top: 280px;
+    left: 50px;
+    font-size: 16px;
+  }
+  .SUS {
+    color: #767676;
+    margin: 0px 10px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: none;
+    font-family: "Nunito";
+    top: 280px;
+    left: 170px;
+    font-size: 16px;
+  }
+  .SUT {
+    color: #767676;
+    margin: 0px 10px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: none;
+    font-family: "Nunito";
+    top: 280px;
+    left: 450px;
+    font-size: 16px;
+  }
+  .LIT {
+    color: #767676;
+    margin: 0px 10px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: none;
+    font-family: "Nunito";
+    top: 280px;
+    left: 350px;
+    font-size: 16px;
+  }
+  .Input1 {
+    position: absolute;
+    top: 320px;
+    left: 70px;
+    border-radius: 6px;
+    border-style: solid;
+  
+  }
+  .Input2 {
+    position: absolute;
+    top: 360px;
+    left: 70px;
+    border-radius: 6px;
+    border-style: solid;
+  
+  }
+  .Input3 {
+    position: absolute;
+    top: 320px;
+    left: 375px;
+    border-radius: 6px;
+    border-style: solid;
+  
+  }
+  .Input4 {
+    position: absolute;
+    top: 360px;
+    left: 375px;
+    border-radius: 6px;
+    border-style: solid;
+  }
+  .SLoginBtn {
+    position: absolute;
+    top: 430px;
+    left: 100px;
+    color: white;
+    background-color: #F91C85;
+    border: none;
+    font-family: "Nunito";
+    padding: 0px 30px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  
+  .TLoginBtn {
+    position: absolute;
+    top: 430px;
+    right: 100px;
+    color: white;
+    background-color: #F91C85;
+    border: none;
+    font-family: "Nunito";
+    padding: 0px 30px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  

@@ -1,0 +1,75 @@
+.Baby {
+  width: 1550px;
+  height: 260px;
+  justify-content: center;
+}
+.BabyBalloon {
+  width: 1500px;
+  height: 260px;
+  position: absolute;
+  margin: 0px;
+  top: 40px;
+  right: -60px;
+  z-index: 1px;
+}
+.Title {
+  margin: 0px;
+  position: absolute;
+  width: 400px;
+  color: #767676;
+  font-family:'Nunito', sans-serif;
+  font-weight:650;
+  font-size: 38px;
+  line-height: 40px;
+  left: 150px;
+  top: 70px;
+}
+.TitleP {
+  Color: #767676;
+  font-size: 15px;
+  width: 340px;
+  position: absolute;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  top: 170px;
+  left: 150px;
+}
+.Button1 {
+  position: absolute;
+  background-color: white;
+  border-radius:4px;
+  color: #767676;
+  border-width: 2px;
+  border-color: #2cc0fada;
+  border-style: solid;
+  padding: 0px 5px;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  width:120px;
+  top: 250px;
+  right: 900px;
+}
+
+.Button2 {
+  position: absolute;
+  border-radius:4px;
+  background-color:#f634b5;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  padding: 2px 20px;
+  color: white;
+  cursor: pointer;
+  top: 250px;
+  right: 750px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+}
+
+.TsnCs {
+  color: #767676;
+  font-size: 6.5px;
+  position: absolute;
+  width: 90px;
+  font-family: 'Nunito', sans-serif;
+  top: 275px;
+  left: 545px;
+  width: 100px;
+}

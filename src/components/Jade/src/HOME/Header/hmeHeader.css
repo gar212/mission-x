@@ -1,0 +1,106 @@
+.TopNavBar {
+  max-width: 1450px;
+    min-width: 250px;
+    height:40px;
+    position: absolute;
+    background-color: #43C0F6;
+    margin: 0px;
+    width: 1500px;
+  }
+  .Logo {
+    width: 150px;
+    height: 50px;
+    position:absolute;
+    left: 150px;
+    top: 2px;
+    margin: 0px;
+  }
+  .NZFlag {
+    margin: 0px;
+    width: 15px;
+    height: 7px;
+    position: absolute;
+    top: 5px;
+    left: 1100px;
+  }
+  .MaoriFlag {
+    width: 15px;
+    height: 7px;
+    float: right;
+    position: absolute;
+    top: 5px;
+    left: 1120px;
+    margin: 0px;
+  }
+  .Lang {
+    font-size: 8px;
+    color: white;
+    font-family: 'Nunito';
+    position: absolute;
+    top: 5px;
+    left: 1070px;
+    z-index: 1;
+    margin: 0px;
+  }
+
+  .LoginPic {
+    width: 15px;
+    height: 15px;
+   margin:0px;
+   position: absolute;
+   top: 20px;
+   left: 1030px;
+
+  }
+  
+  .TopNavBtn {
+    font-family: 'Nunito';
+    font-weight: 900;
+    color: white;
+    font-style: bold;
+    font-size: 9px;
+    padding: 0px;
+    border:none;
+    background: transparent;
+    margin: 0px 50px 0px 0px;
+    cursor: pointer;
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 850px;
+    z-index: 1000;
+  }
+  .TopNavBtn1 {
+    font-family: 'Nunito';
+    font-weight: 900;
+    color: white;
+    font-style: bold;
+    font-size: 9px;
+    padding: 0px;
+    border:none;
+    background: transparent;
+    margin: 0px 50px 0px 0px;
+    cursor: pointer;
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 750px;
+    z-index: 1000;
+  }
+  .TopNavBtn2 {
+    font-family: 'Nunito';
+    font-weight: 900;
+    color: white;
+    font-style: bold;
+    font-size: 9px;
+    padding: 0px;
+    border:none;
+    background: transparent;
+    margin: 0px 50px 0px 0px;
+    cursor: pointer;
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 650px;
+    z-index: 1000;
+  }

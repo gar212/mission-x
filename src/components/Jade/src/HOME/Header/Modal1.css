@@ -1,0 +1,20 @@
+.Modal {
+    width: 70%;
+    height: 70%;
+    background-color: 0px 0px 0px 0.7px;
+}
+
+.LoginButton {
+    color: white;
+    font-family: "Nunito", open-sans; 
+    position: relative;
+    margin: 0px;
+    top: -27px;
+    left: 1015px;
+    font-size: 10px;
+}
+.LoginModal {
+    position: fixed;
+    max-width: 60%;
+     max-height: 60%;
+}

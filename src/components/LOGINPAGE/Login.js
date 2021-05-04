@@ -1,5 +1,5 @@
 import React from 'react'
-import './Login.css';
+import '../LOGINPAGE/'
 import Students from '../img/Students.png';
 import Teachers from '../img/Teachers.png';
 import Line from '../img/Line.png';

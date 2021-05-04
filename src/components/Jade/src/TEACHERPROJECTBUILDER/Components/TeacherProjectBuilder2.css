@@ -1,0 +1,699 @@
+/* All comments below , I have used as line breakers so
+ its eeasier to identify the css for each component */
+
+/* Dimensions for entire page */
+.ProjectMain {
+  max-width: 1500px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+/* Header starter */
+.ProjectsHeader {
+  width: 1400px;
+  height: 50px;
+  background-color: #ffff;
+  margin: 0px 0px 0px 0px;
+  position: fixed;
+}
+.circle {
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  padding: 0px;
+  background-color: #FDF7C0;
+  border: 3px solid #43C0F6;
+  color: #767676;
+  text-align: center;
+  font-style: bold;
+  font: 15px 'Nunito', sans-serif;
+  position: relative;
+  margin: 0px;
+  top: -60px;
+  right: -250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NZFlag {
+  width: 15px;
+  z-index: 1;
+  height: 7px;
+  float: right;
+  position: relative;
+  top: -300px;
+  left: -190px;
+  margin: 0px;
+}
+.MaoriFlag {
+  width: 15px;
+  z-index: 1;
+  height: 7px;
+  float: right;
+  position: relative;
+  top: -300px;
+  left: -180px;
+  margin: 0px;
+}
+h4 {
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    top: -30px;
+    margin: 0px;
+    color: #767676;
+    right: -180px;
+    margin: 0px;
+}
+p {
+  margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 8px;
+    color: #767676;
+    position: relative;
+    top: -30px;
+    right: -180px;
+}
+.LogoBlue {
+  width: 100px;
+  height: 40px;
+  position:relative;
+  left: 40px;
+  top: 2px;
+  margin: 0px;
+}
+.circle1 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -80px;
+  right: -280px;
+  z-index: 1;
+}
+.circle2 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -95px;
+  right: -300px;
+  z-index: 1;
+}
+
+.circle3 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -110.5px;
+  right: -320px;
+  z-index: 1;
+}
+.circle4 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -125.5px;
+  right: -340px;
+  z-index: 1;
+}
+.circle5 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -140.5px;
+  right: -360px;
+  z-index: 1;
+}
+.circle6 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -155.5px;
+  right: -380px;
+  z-index: 1;
+}
+.circle7 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -171px;
+  right: -400px;
+  z-index: 1;
+}
+.circle8 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -186.5px;
+  right: -420px;
+  z-index: 1;
+}
+.circle9 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -202px;
+  right: -440px;
+  z-index: 1;
+}
+.circle10 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -217px;
+  right: -460px;
+  z-index: 1;
+}
+.circle11 {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -232.5px;
+  right: -480px;
+  z-index: 1;
+  margin: 0px;
+}
+.circle12 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -247.5px;
+  right: -500px;
+  z-index: 1;
+}
+.circle13 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -263px;
+  right: -520px;
+  z-index: 1;
+}
+.circle14 {
+  margin: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  border: 3px solid #43C0F6;
+  position: relative;
+  background-color: white;
+  top: -278.5px;
+  right: -540px;
+  z-index: 1;
+}
+/* Css above is for Project Builder Teacher Header */
+
+/* BODY CONTENT */
+.ProjectBody {
+  max-width: 100%;
+  height: 500px;;
+  background-color: #B2E4FA;
+  margin: 0px;
+  position: relative;
+  top: -260px;
+}
+
+/* SIDEMENU */
+.ProjectsSideMenu {
+  width: 165px;
+  height: 100%;
+  background-color: #43C0F6;
+  margin: 0px;
+}
+.TP {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 20px;
+    left: 55px;    
+}
+.LO {
+  position: absolute;
+  top: 80px;
+  left: 7px;
+  font-size: 10px;
+  background-color: transparent;
+  border: none;
+  padding: none;
+  width: 165px;
+  color: white;
+}
+.LO:hover {
+  background-color: #B2E4FA;
+  width: 170px;
+  height: 20px;
+  left: -5px;
+  color: #767676;
+}
+.Instru {
+  position: absolute;
+  top: 110px;
+  left: -10px;
+  font-size: 10px;
+  width: 165px;
+  background-color: transparent;
+  border: none;
+  padding: none;
+  color: white;
+}
+.Instru:hover {
+  background-color: #B2E4FA;
+  width: 170px;
+  height: 20px;
+  left: -5px;
+  color: #767676;
+}
+.VT {
+  background-color: transparent;
+  border: none;
+  padding: none;
+  position: absolute;
+  left: -5px;
+  font-size: 10px;
+  top: 140px;
+  width: 165px;
+  color: white;
+}
+.VT:hover {
+  background-color: #B2E4FA;
+  width: 170px;
+  height: 20px;
+  left: -5px;
+  color: #767676;
+}
+.PP {
+  position: absolute;
+  top: 170px;
+  width: 165px;
+  left: -5px;
+  font-size: 10px;
+  background-color: transparent;
+  border: none;
+  padding: none;
+  color: white;
+}
+.PP:hover {
+  background-color: #B2E4FA;
+  width: 170px;
+  height: 20px;
+  left: -5px;
+  color: #767676;
+}
+.CS {
+  position: absolute;
+  color: white;
+  top: 200px;
+  font-size: 10px;
+  width: 165px;
+  background-color: transparent;
+  border: none;
+  padding: none;
+  left: 0px;
+}
+.CS:hover {
+  background-color: #B2E4FA;
+  width: 170px;
+  height: 20px;
+  left: -5px;
+  color: #767676;
+}
+.OA {
+  position: absolute;
+  top: 230px;
+  left: 0px;
+  width: 165px;
+  background-color: transparent;
+  border: none;
+  padding: none;
+  font-size: 10px;
+  color: white;
+}
+.OA:hover {
+  background-color: #B2E4FA;
+  width: 170px;
+  height: 20px;
+  left: -5px;
+  color: #767676;
+}
+.VQ {
+  position: absolute;
+  top: 255px;
+  width: 165px;
+  background-color: transparent;
+  border: none;
+  padding: none;
+  color: white;
+  font-size: 10px;
+  left: 0px;
+}
+.VQ:hover {
+  background-color: #B2E4FA;
+  width: 170px;
+  height: 20px;
+  left: -5px;
+  color: #767676;
+}
+
+.BullsEye {
+  width: 15px;
+  height: 15px;
+  position: absolute;   
+  left: 7px;
+}
+.Instr1 {
+  width: 15px;
+  height: 15px;
+  position: absolute;   
+  left: 25px;
+}
+.Vidz {
+  width: 15px;
+  height: 15px;
+  position: absolute;   
+  left: 17px; 
+}
+.Prev {
+  width: 15px;
+  height: 15px;
+  position: absolute;   
+  left: 17px;
+}
+.Check {
+  width: 15px;
+  height: 15px;
+  position: absolute;   
+  left: 10px;    
+}
+.Offline {
+  width: 15px;
+  height: 15px;
+  position: absolute;   
+  left: 10px;
+}
+
+.VQZ {
+  width: 15px;
+  height: 15px;
+  position: absolute;   
+  left: 12px; 
+}
+.PS1, .PS2, .PS3 {
+  width: 10px;
+  height: 10px; 
+  color: white;
+  background-color: transparent;
+  align-content: center;
+  position: relative;
+}
+
+.PSM1, .PSM2, .PSM3 {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 6px;
+  border: none;
+  padding: none;
+  margin: 0px 5px;
+  background-color: transparent;
+}
+.PSM1 {
+  position: relative;
+  top: 430px;
+  left: -30px;
+}
+.PSM2 {
+  position: relative;
+  top: 430px;
+  left: -25px;
+}
+.PSM3 {
+  position: relative;
+  top: 430px;
+  left: -25px;
+}
+.MP {
+  width: 130px;
+  float: right;
+  color: white;
+  background-color: #43C0F6;
+  margin-right: 175px;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 25px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  position: absolute;
+  left: 1060px;
+  font-size: 11px;
+  top: 5px;
+  z-index: 1000;
+}
+
+.TS {
+  display: flex;
+  float: right;
+  color: white;
+  background-color: #E5AB2C;
+  margin-right: 175px;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  position: absolute;
+  left: 750px;
+  top: 5px;
+  font-size: 11px;
+  width: 120px;
+  z-index: 1000;
+}
+.HC {
+  position: absolute;
+  top: 5px;
+  float: right;
+  color: white;
+  background-color: #F91C85;
+  margin-right: 175px;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 30px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  left: 900px;
+  font-size: 11px;
+  z-index: 1000;
+  width: 130px;
+}
+/* Start of switchable component for the Teacher Project Bulder  */
+.TeacherProjectsComp2 {
+  height: 430px;
+  width: 75%;
+  background-color: #D8F1FC;
+  border-radius: 20px;
+  position: absolute;
+  top: 35px;
+  right: 150px;
+  margin: none;
+}
+.h4JS {
+  color: #767676;
+  font-family: 'Nunito';
+  font-weight: 900;
+  position: absolute;
+  right: 700px;
+  top: 30px;
+  margin: none;
+}
+.pJS {
+  position: relative;
+  left: 240px;
+  top: 70px;
+  word-spacing: 2px;
+  line-height: 25px;
+}
+.LftArrow {
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+}
+.RghtArrow {
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  position: absolute;
+  left: 900px;
+  top: 200px;
+}
+.Join {
+  position: relative;
+  width: 550px;
+  height: 150px;
+  top: 100px;
+  left: 240px;
+}
+.p1JS {
+  position: relative;
+  left: 240px;
+  top: 120px;
+}
+/* end of Teacher Prject builder 2 */
+h3 {
+  color: #767676;
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  left: 420px;
+}
+p {
+  position: relative;
+  top: 10px;
+  left: 300px;
+  font-size: 10px;
+}
+.LO1, .LO4, .LO6 {
+  width: 140px;
+  height: 240px;
+  position: relative;
+  bottom: 10px;
+}
+.LO2 {
+  position: relative;
+  bottom: 240px;
+  left: 160px;
+}
+.LO3 {
+  position: relative;
+  bottom: 200px;
+  margin-left: 10px;
+}
+
+.LO2, .LO7 {
+  width: 150px;
+  height: 70px;
+}
+.LO3 {
+  width: 60px;
+  height: 35px;
+}
+.LB {
+  width: 270px;
+  height: 400px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.h6LB, .h6CB, .h6MB {
+  color: #767676;
+}
+.CB {
+  position: absolute;
+ top: 50px;
+ left: 430px; 
+}
+.LO5 {
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  margin-left: 20px;
+}
+
+.LO7 {
+  width: 120px;
+  height: 70px;
+  position: absolute;
+  margin-left: 20px;
+}
+.MB {
+  position: absolute;
+  top: 50px;
+  left: 750px;
+}
+/* Comment is only to identify the break in the css file for where the footer starts and switchable component ends */
+footer { 
+  width: 1450px;
+  height: 100px;
+  background-color: white;
+  z-index: 1000;
+  position: relative;
+  top: 450px;
+  color: #767676;
+}
+.Copyright {
+  width: 10px;
+  height: 10x;
+  margin: 0px 10px;
+  position: relative;
+  left: 0px;
+}
+.LstP {
+  position: relative;
+  left: 620px;
+  margin: 0px;
+} 

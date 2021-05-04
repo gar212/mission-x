@@ -1,0 +1,156 @@
+.BlueboxLast {
+    width: 100%;
+    height: 350px;
+    background-color: #B2E4FA;
+    position: absolute;
+    top: 1500px;
+  }
+  .Last1 {
+    color: #767676;
+      font-family: 'Nunito';
+      position: absolute;
+      left: 150px;
+      top: 60px;
+  }
+  .Last2 {
+      color: #767676;
+    font-family: 'Nunito';
+    position: absolute;
+    left: 290px;
+    top: 60px;
+  }
+  .Last3 {
+    color: #767676;
+    font-family: 'Nunito';
+    position: absolute;
+    left: 430px;
+    top: 60px;
+  }
+  .Last4 {
+    color: #767676;
+    font-family: 'Nunito';
+    position: absolute;
+    left: 580px;
+    top: 60px;
+  }
+  .Last5 {
+    color: #767676;
+    font-family: 'Nunito';
+    position: absolute;
+    left: 750px;
+    top: 60px;
+  }
+  .pLast {
+      color: #767676;
+      top: 120px;
+      left: 750px;
+      z-index: 1; 
+      width: 270px;
+      font-size: 12px;
+  }
+  .email {
+      position: absolute;
+      font-family: 'Nunito';
+      top: 200px;
+      left: 750px;
+  }
+  .mobNum {
+    position: absolute;
+    font-family: 'Nunito';
+    top: 240px;
+    left: 747px;
+    margin: 0px;
+  }
+  .Company1 {
+      position: absolute;
+      top: -50px;
+     }
+  .Company2 {
+    position: absolute;
+    top: -50px;
+    left: 140px;
+    font-size: 9px;
+}
+.Company3 {
+    position: absolute;
+    top: -50px;
+    left: 280px;
+    text-overflow: unset;
+    font-size: 11px;
+}
+.Company4 {
+    position: absolute;
+    top: -50px;
+    left: 430px;
+    font-size: 9px;
+}
+.a1 {
+  position: absolute;
+  top: 170px;
+  font-size: 12px;
+}
+.a2 {
+  position: absolute;
+  top: 190px;
+  font-size: 12px;
+}
+.a3 {
+  position: absolute;
+  top: 210px;
+  font-size: 12px;
+}
+.a4 {
+  position: absolute;
+  top: 170px;
+  font-size: 12px;
+}
+.a5 {
+  position: absolute;
+  top: 190px;
+  font-size: 12px;
+}
+.a6 {
+  position: absolute;
+  top: 210px;
+  font-size: 12px;
+}
+.a7 {
+  position: absolute;
+  top: 230px;
+  font-size: 12px;
+}
+.a8 {
+  position: absolute;
+  top: 250px;
+  font-size: 12px;
+}
+.a9 {
+  position: absolute;
+  top: 270px;
+  font-size: 12px;
+}
+.a10 {
+  position: absolute;
+  top: 170px;
+  font-size: 12px;
+}
+.a11 {
+  position: absolute;
+  top: 190px;
+  font-size: 12px;
+}
+.a12 {
+  position: absolute;
+  top: 210px;
+  font-size: 12px;
+}
+.a13 {
+  position: absolute;
+  top: 170px;
+  font-size: 12px;
+}
+.a14 {
+  position: absolute;
+  top: 190px;
+  font-size: 12px;
+}
